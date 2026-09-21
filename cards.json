@@ -1,0 +1,33 @@
+[
+  {
+    "id": "nimble-momonga",
+    "name": "Nimble Momonga",
+    "category": "monster",
+    "level": 1,
+    "monsterType": "Beast",
+    "hp": 20,
+    "atk": 10,
+    "def": 20,
+    "effect": "Dimension: Add 1 movement crest to your crest pool. Your Level 1 and Level 2 Beasts have Swift 2.",
+    "keywords": [
+      {
+        "name": "Swift",
+        "value": 2
+      }
+    ],
+    "crests": [
+      {
+        "roll": 5,
+        "crest": "magic",
+        "amount": 3
+      },
+      {
+        "roll": 6,
+        "crest": "movement",
+        "amount": 3
+      }
+    ],
+    "imageFront": "assets/cards/nimble-momonga-front.jpg",
+    "imageBack": "assets/cards/nimble-momonga-back.jpg"
+  }
+]
