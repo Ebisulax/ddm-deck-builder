@@ -368,13 +368,13 @@ function standardFrontCandidates(
             card.name
         ),
 
-        `${CONFIG.FRONT_DIR}${card.name}.jpg`,
+`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpg`,
 
-        `${CONFIG.FRONT_DIR}${card.name}.jpeg`,
+`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpeg`,
 
-        `${CONFIG.FRONT_DIR}${card.name}.png`,
+`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.png`,
 
-        `${CONFIG.FRONT_DIR}${card.name}.webp`
+`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.webp`
 
     ]);
 }
@@ -394,13 +394,13 @@ function backCandidates(
             card.name
         ),
 
-        `${CONFIG.BACK_DIR}${card.name} back.jpg`,
+`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpg`,
 
-        `${CONFIG.BACK_DIR}${card.name} back.jpeg`,
+`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpeg`,
 
-        `${CONFIG.BACK_DIR}${card.name} back.png`,
+`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.png`,
 
-        `${CONFIG.BACK_DIR}${card.name} back.webp`
+`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.webp`
 
     ]);
 }
