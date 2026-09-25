@@ -387,20 +387,23 @@ function backCandidates(
 
     return unique([
 
-        explicitPath,
+        explicitPath
+            ? explicitPath.toLowerCase()
+            : null,
 
         templatePath(
             card.backTemplate,
             card.name
-        ),
+        )
+            ?.toLowerCase(),
 
-`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpg`,
+        `${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpg`,
 
-`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpeg`,
+        `${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.jpeg`,
 
-`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.png`,
+        `${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.png`,
 
-`${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.webp`
+        `${CONFIG.BACK_DIR}${card.name.toLowerCase()} back.webp`
 
     ]);
 }
