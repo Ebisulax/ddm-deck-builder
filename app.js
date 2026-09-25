@@ -2055,10 +2055,12 @@ function renderCardPool() {
                     type="button"
                 >
 
-                    <img
-                        class="card-picture"
-                        alt="${escapeHtml(card.name)}"
-                    >
+<img
+    class="card-picture"
+    loading="lazy"
+    decoding="async"
+    alt="${escapeHtml(card.name)}"
+>
 
                 </button>
 
