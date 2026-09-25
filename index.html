@@ -1,212 +1,704 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DDM Card Search & Deck Builder</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dungeon Dice Monsters Deck Builder</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <script
+        src="app.js"
+        defer
+    ></script>
 </head>
+
+
 <body>
-  <header class="site-header">
-    <div>
-      <h1>DDM Card Search & Deck Builder</h1>
-      <p>Filter the card database and build a 15-card deck.</p>
+
+     <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="page-layout">
+
+
+        <!-- =================================================
+             LEFT: DECK
+             ================================================= -->
+
+        <section class="deck-panel panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <h2>Your Deck</h2>
+
+                    <div class="description">
+                        15 cards · maximum 3 copies per card
+                    </div>
+                </div>
+
+                <div
+                    id="deckCount"
+                    class="deck-count"
+                >
+                    0 / 15
+                </div>
+
+            </div>
+
+
+            <div
+                id="deckGrid"
+                class="deck-grid"
+            ></div>
+
+
+            <div
+                id="deckStats"
+                class="deck-stats"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RIGHT: CARD BROWSER
+             ================================================= -->
+
+        <section class="browser-panel panel">
+
+
+            <!-- HEADER -->
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <h2>
+                        Card Browser
+                    </h2>
+
+                    <div
+                        id="resultCount"
+                        class="description"
+                    >
+                        Loading cards...
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COMPACT FILTER BAR
+                 ================================================= -->
+
+            <div class="compact-search-panel">
+
+
+                <!-- MAIN FILTER ROW -->
+
+                <div class="search-main-row">
+
+                    <input
+                        id="searchInput"
+                        class="main-search"
+                        type="search"
+                        placeholder="Search cards..."
+                    >
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="compact-toggle-group">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="Monster"
+                            >
+                            <span>M</span>
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="Spell"
+                            >
+                            <span>S</span>
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="Trap"
+                            >
+                            <span>T</span>
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- LEVEL -->
+
+                    <div class="compact-toggle-group">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="level"
+                                value="1"
+                            >
+                            <span>L1</span>
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="level"
+                                value="2"
+                            >
+                            <span>L2</span>
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="level"
+                                value="3"
+                            >
+                            <span>L3</span>
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="level"
+                                value="4"
+                            >
+                            <span>L4</span>
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- SORT -->
+
+                    <select
+                        id="sortFilter"
+                        class="compact-sort"
+                        title="Sort cards"
+                    >
+
+                        <option value="name-asc">
+                            A–Z
+                        </option>
+
+                        <option value="name-desc">
+                            Z–A
+                        </option>
+
+                        <option value="level-asc">
+                            Level ↑
+                        </option>
+
+                        <option value="level-desc">
+                            Level ↓
+                        </option>
+
+                        <option value="hp-desc">
+                            HP ↓
+                        </option>
+
+                        <option value="atk-desc">
+                            ATK ↓
+                        </option>
+
+                        <option value="def-desc">
+                            DEF ↓
+                        </option>
+
+                    </select>
+
+
+
+                    <!-- MORE -->
+
+                    <button
+                        id="moreFiltersButton"
+                        class="compact-button"
+                        type="button"
+                    >
+                        More ▾
+                    </button>
+
+
+
+                    <!-- RESET -->
+
+                    <button
+                        id="resetFiltersButton"
+                        class="compact-button icon-button"
+                        type="button"
+                        title="Reset filters"
+                    >
+                        ↺
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ADVANCED FILTERS
+                     ================================================= -->
+
+                <div
+                    id="advancedFilters"
+                    class="advanced-filters"
+                >
+
+
+                    <!-- FIRST ROW -->
+
+                    <div class="advanced-filter-row">
+
+                        <div class="mini-filter wide">
+
+                            <label for="effectSearch">
+                                Effect contains
+                            </label>
+
+                            <input
+                                id="effectSearch"
+                                type="search"
+                                placeholder="destroy, attack, resurrect..."
+                            >
+
+                        </div>
+
+
+                        <div class="mini-filter">
+
+                            <label for="monsterTypeFilter">
+                                Monster Type
+                            </label>
+
+                            <select id="monsterTypeFilter">
+                                <option value="">
+                                    Any
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="mini-filter">
+
+                            <label for="itemSubtypeFilter">
+                                Item Subtype
+                            </label>
+
+                            <select id="itemSubtypeFilter">
+                                <option value="">
+                                    Any
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="mini-filter">
+
+                            <label for="keywordFilter">
+                                Keyword
+                            </label>
+
+                            <select id="keywordFilter">
+                                <option value="">
+                                    Any
+                                </option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- STATS -->
+
+                    <div class="stats-filter-row">
+
+
+                        <!-- HP -->
+
+                        <div class="stat-filter">
+
+                            <strong>
+                                HP
+                            </strong>
+
+                            <select id="hpOperator">
+                                <option value="">Any</option>
+                                <option value="<">&lt;</option>
+                                <option value="<=">&lt;=</option>
+                                <option value="=">=</option>
+                                <option value=">=">&gt;=</option>
+                                <option value=">">&gt;</option>
+                            </select>
+
+                            <input
+                                id="hpValue"
+                                type="number"
+                                min="0"
+                                step="10"
+                                placeholder="0"
+                            >
+
+                        </div>
+
+
+
+                        <!-- ATK -->
+
+                        <div class="stat-filter">
+
+                            <strong>
+                                ATK
+                            </strong>
+
+                            <select id="atkOperator">
+                                <option value="">Any</option>
+                                <option value="<">&lt;</option>
+                                <option value="<=">&lt;=</option>
+                                <option value="=">=</option>
+                                <option value=">=">&gt;=</option>
+                                <option value=">">&gt;</option>
+                            </select>
+
+                            <input
+                                id="atkValue"
+                                type="number"
+                                min="0"
+                                step="10"
+                                placeholder="0"
+                            >
+
+                        </div>
+
+
+
+                        <!-- DEF -->
+
+                        <div class="stat-filter">
+
+                            <strong>
+                                DEF
+                            </strong>
+
+                            <select id="defOperator">
+                                <option value="">Any</option>
+                                <option value="<">&lt;</option>
+                                <option value="<=">&lt;=</option>
+                                <option value="=">=</option>
+                                <option value=">=">&gt;=</option>
+                                <option value=">">&gt;</option>
+                            </select>
+
+                            <input
+                                id="defValue"
+                                type="number"
+                                min="0"
+                                step="10"
+                                placeholder="0"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CRESTS -->
+
+                    <div class="crest-section">
+
+                        <div class="crest-header">
+
+                            <strong>
+                                Crests on Back
+                            </strong>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="crestMatch"
+                                    value="any"
+                                >
+                                Any
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="crestMatch"
+                                    value="all"
+                                    checked
+                                >
+                                All
+                            </label>
+
+                        </div>
+
+
+                        <div
+                            id="crestFilters"
+                            class="crest-filter-grid"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARD LIST
+                 ================================================= -->
+
+            <div
+                id="cardPool"
+                class="card-pool"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         PREVIEW MODAL
+         ===================================================== -->
+
+   <div
+    id="previewModal"
+    class="modal"
+    aria-hidden="true"
+>
+
+    <button
+        class="modal-backdrop"
+        data-action="close-preview"
+        aria-label="Close preview"
+    ></button>
+
+
+    <div class="preview-window">
+
+        <button
+            class="preview-close"
+            data-action="close-preview"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="preview-carousel">
+
+            <button
+                id="previewPrevButton"
+                class="preview-arrow"
+                data-action="preview-prev"
+                type="button"
+                aria-label="Previous card"
+            >
+                ‹
+            </button>
+
+
+            <div class="preview-images">
+
+                <div class="preview-image-frame">
+
+                    <img
+                        id="previewFrontImage"
+                        alt="Card front"
+                    >
+
+                </div>
+
+
+                <div class="preview-image-frame">
+
+                    <img
+                        id="previewBackImage"
+                        alt="Card back"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="previewNextButton"
+                class="preview-arrow"
+                data-action="preview-next"
+                type="button"
+                aria-label="Next card"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <div class="preview-add-row">
+
+            <button
+                id="previewAddButton"
+                class="primary-button"
+                data-action="preview-add"
+                type="button"
+            >
+                + Add
+            </button>
+
+        </div>
+
     </div>
-    <button id="clearFiltersBtn" class="secondary">Clear filters</button>
-  </header>
 
-  <main class="app-layout">
-    <section class="browser-panel">
-      <section class="filters surface">
-        <div class="filter-grid">
-          <label>
-            Search everything
-            <input id="searchText" type="search" placeholder="Name, effect, type, keyword..." />
-          </label>
+</div>
+     <!-- =====================================================
+     PREVIEW MODAL
+     ===================================================== -->
 
-          <label>
-            Effect contains
-            <input id="effectText" type="search" placeholder="e.g. destroy, swift..." />
-          </label>
+<!-- =====================================================
+     PREVIEW MODAL
+     ===================================================== -->
 
-          <label>
-            Category
-            <select id="categoryFilter"><option value="">Any</option></select>
-          </label>
+<div
+    id="previewModal"
+    class="modal"
+    aria-hidden="true"
+>
 
-          <label>
-            Level
-            <select id="levelFilter"><option value="">Any</option></select>
-          </label>
+    <button
+        class="modal-backdrop"
+        data-action="close-preview"
+        type="button"
+        aria-label="Close preview"
+    ></button>
 
-          <label>
-            Monster type
-            <select id="monsterTypeFilter"><option value="">Any</option></select>
-          </label>
 
-          <label>
-            Item type
-            <select id="itemTypeFilter"><option value="">Any</option></select>
-          </label>
+    <div class="preview-window">
 
-          <label>
-            Item subtype
-            <select id="itemSubtypeFilter"><option value="">Any</option></select>
-          </label>
+        <button
+            class="preview-close"
+            data-action="close-preview"
+            type="button"
+            aria-label="Close preview"
+        >
+            ×
+        </button>
 
-          <label>
-            Keyword
-            <select id="keywordFilter"><option value="">Any</option></select>
-          </label>
 
-          <label>
-            Crest
-            <select id="crestFilter"><option value="">Any</option></select>
-          </label>
+        <div class="preview-carousel">
 
-          <label>
-            Die roll
-            <select id="crestRollFilter">
-              <option value="">Any</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-          </label>
+            <button
+                id="previewPrevButton"
+                class="preview-arrow"
+                data-action="preview-prev"
+                type="button"
+                aria-label="Previous card"
+            >
+                ‹
+            </button>
 
-          <label>
-            Minimum crest amount
-            <input id="crestAmountFilter" type="number" min="1" step="1" placeholder="Any" />
-          </label>
 
-          <div class="numeric-filter">
-            <span>HP</span>
-            <select id="hpOperator">
-              <option value="<">&lt;</option>
-              <option value="<=">&le;</option>
-              <option value="=">=</option>
-              <option value=">=">&ge;</option>
-              <option value=">">&gt;</option>
-            </select>
-            <input id="hpValue" type="number" placeholder="Any" />
-          </div>
+            <div class="preview-images">
 
-          <div class="numeric-filter">
-            <span>ATK</span>
-            <select id="atkOperator">
-              <option value="<">&lt;</option>
-              <option value="<=">&le;</option>
-              <option value="=">=</option>
-              <option value=">=">&ge;</option>
-              <option value=">">&gt;</option>
-            </select>
-            <input id="atkValue" type="number" placeholder="e.g. 20" />
-          </div>
+                <div class="preview-image-frame">
 
-          <div class="numeric-filter">
-            <span>DEF</span>
-            <select id="defOperator">
-              <option value="<">&lt;</option>
-              <option value="<=">&le;</option>
-              <option value="=">=</option>
-              <option value=">=">&ge;</option>
-              <option value=">">&gt;</option>
-            </select>
-            <input id="defValue" type="number" placeholder="Any" />
-          </div>
+                    <img
+                        id="previewFrontImage"
+                        alt="Card front"
+                    >
 
-          <label>
-            Sort by
-            <select id="sortBy">
-              <option value="name-asc">Name A–Z</option>
-              <option value="name-desc">Name Z–A</option>
-              <option value="level-asc">Level low → high</option>
-              <option value="level-desc">Level high → low</option>
-              <option value="atk-asc">ATK low → high</option>
-              <option value="atk-desc">ATK high → low</option>
-              <option value="def-asc">DEF low → high</option>
-              <option value="def-desc">DEF high → low</option>
-              <option value="hp-asc">HP low → high</option>
-              <option value="hp-desc">HP high → low</option>
-            </select>
-          </label>
-        </div>
-      </section>
+                </div>
 
-      <div class="results-toolbar">
-        <strong id="resultCount">0 cards</strong>
-      </div>
 
-      <section id="results" class="card-grid" aria-live="polite"></section>
-    </section>
+                <div class="preview-image-frame">
 
-    <aside class="deck-panel surface">
-      <div class="deck-header">
-        <div>
-          <h2>Deck Builder</h2>
-          <p><strong id="deckCount">0</strong> / 15 cards</p>
-        </div>
-        <span id="deckStatus" class="deck-status invalid">15 cards required</span>
-      </div>
+                    <img
+                        id="previewBackImage"
+                        alt="Card back"
+                    >
 
-      <div class="deck-rule">
-        Maximum <strong>3 copies</strong> of any card.
-      </div>
+                </div>
 
-      <div id="deckList" class="deck-list"></div>
+            </div>
 
-      <div class="deck-summary">
-        <div><span>Cards</span><strong id="summaryCards">0 / 15</strong></div>
-        <div><span>Unique</span><strong id="summaryUnique">0</strong></div>
-      </div>
 
-      <div class="deck-actions">
-        <button id="exportDeckBtn">Export deck</button>
-        <button id="importDeckBtn" class="secondary">Import deck</button>
-        <button id="clearDeckBtn" class="danger">Clear deck</button>
-        <input id="importDeckInput" type="file" accept=".json,application/json" hidden />
-      </div>
-    </aside>
-  </main>
+            <button
+                id="previewNextButton"
+                class="preview-arrow"
+                data-action="preview-next"
+                type="button"
+                aria-label="Next card"
+            >
+                ›
+            </button>
 
-  <template id="cardTemplate">
-    <article class="card-result surface">
-      <div class="image-wrap">
-        <img class="card-image" alt="" />
-        <button class="flip-btn secondary" type="button">Show back</button>
-      </div>
-
-      <div class="card-content">
-        <div class="title-row">
-          <div>
-            <h3 class="card-name"></h3>
-            <div class="badges card-meta"></div>
-          </div>
-          <div class="add-area">
-            <span class="copy-count"></span>
-            <button class="add-btn" type="button">Add to deck</button>
-          </div>
         </div>
 
-        <div class="stats"></div>
-        <p class="effect"></p>
 
-        <div class="detail-block keywords-block">
-          <strong>Keywords</strong>
-          <div class="badges keywords"></div>
+        <div class="preview-add-row">
+
+            <button
+                id="previewAddButton"
+                class="primary-button"
+                data-action="preview-add"
+                type="button"
+            >
+                + Add
+            </button>
+
         </div>
 
-        <div class="detail-block">
-          <strong>Dice / Crests</strong>
-          <div class="dice-list"></div>
-        </div>
-      </div>
-    </article>
-  </template>
+    </div>
 
-  <script src="app.js"></script>
+</div>
 </body>
 </html>

@@ -1,33 +1,6709 @@
-[
-  {
-    "id": "nimble-momonga",
-    "name": "Nimble Momonga",
-    "category": "monster",
-    "level": 1,
-    "monsterType": "Beast",
-    "hp": 20,
-    "atk": 10,
-    "def": 20,
-    "effect": "Dimension: Add 1 movement crest to your crest pool. Your Level 1 and Level 2 Beasts have Swift 2.",
-    "keywords": [
-      {
-        "name": "Swift",
-        "value": 2
-      }
-    ],
-    "crests": [
-      {
-        "roll": 5,
-        "crest": "magic",
+{
+  "meta": {
+    "cardCount": 211,
+    "automaticStarFacesStored": false,
+    "automaticStarRules": {
+      "1": {
+        "rolls": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "amount": 1
+      },
+      "2": {
+        "rolls": [
+          1,
+          2,
+          3
+        ],
+        "amount": 2
+      },
+      "3": {
+        "rolls": [
+          1,
+          2
+        ],
         "amount": 3
       },
-      {
-        "roll": 6,
-        "crest": "movement",
-        "amount": 3
+      "4": {
+        "rolls": [
+          1
+        ],
+        "amount": 4
       }
-    ],
-    "imageFront": "assets/cards/nimble-momonga-front.jpg",
-    "imageBack": "assets/cards/nimble-momonga-back.jpg"
-  }
-]
+    },
+    "imageFrontTemplate": "Karten/cards/{name}.jpg",
+    "imageBackTemplate": "Karten/cards backs/{name} back.jpg",
+    "ignoredAlternateArt": "Infernity Archer alt.jpg"
+  },
+  "cards": [
+    {
+      "id": "13th-grave",
+      "name": "13th Grave",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 0,
+      "def": 10,
+      "effect": "Tunneler\nMagic x2 Sacrifice this monster: Deal 10 damage to a monster.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ],
+      "altArts": [
+        "13th Grave alt art 1.jpg",
+        "13th Grave alt art 2.jpg"
+      ]
+    },
+    {
+      "id": "ancient-lamp",
+      "name": "Ancient Lamp",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: You can move 1 \"Genie\"-monster you control to an adjacent space of this monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "ape-fighter",
+      "name": "Ape Fighter",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "When this monster destroys an opponent's monster by battle, it gains 10 ATK. If this monster didn't destroy one in a turn, it loses all the ATK it gained by its effect.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "archfiend-marmot-of-nefariousness",
+      "name": "Archfiend Marmot of Nefariousness",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Flying, Range 2",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Range",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "arsenal-bug",
+      "name": "Arsenal Bug",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "If you control a non-Beast, this monster loses 10 HP, 10 ATK and 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "axe-dragonute",
+      "name": "Axe Dragonute",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: Add 1 Attack to your crest pool.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "battle-disc",
+      "name": "Battle Disc",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "Trap\nIncrease the ATK of the trapped monster by 20.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "battle-warrior",
+      "name": "Battle Warrior",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "Reach\nDimension: Add 1 Attack to your crest pool.",
+      "keywords": [
+        {
+          "name": "Reach"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "berserk-gorilla",
+      "name": "Berserk Gorilla",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "At the end of your turn, if this monster didn't attack this turn, you lose 3 Attack crests.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "bone-mouse",
+      "name": "Bone Mouse",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Tunneler\nIf there's a Beast on the board, resurrect this monster.\nMonster who battles this monster gets infected 1.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        },
+        {
+          "name": "Infected",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "boo-koo",
+      "name": "Boo Koo",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 30,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: Add 1 Magic to your crest pool.\nYour Spellcaster's effects cost 1 Magic less to activate.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "cave-dragon",
+      "name": "Cave Dragon",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "This monster can only attack if there is another Dragon you control within 1 square.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-insect",
+      "name": "Chainsaw Insect",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "After this monster attacks, your opponent gains 3 crests of his choice.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "comrade-swordsman-of-landstar",
+      "name": "Comrade Swordsman of Landstar",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Warrior-type monsters gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "dd-crow",
+      "name": "D.D. Crow",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: A card in your opponent's GY gets sealed.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "dice-re-roll",
+      "name": "Dice Re-Roll",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "Req: You just rolled for turn. Ignore the results of the roll, and roll again.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "drill-bug",
+      "name": "Drill Bug",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "If this monster destroys an opponent's monster by battle: Your \"Parasite Paracide\" gain starburst 3 and beacon.",
+      "keywords": [
+        {
+          "name": "Starburst",
+          "value": 3
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "fiend-scorpion",
+      "name": "Fiend Scorpion",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Tunneler\nIf this monster attacks a monster, deal 20 damage to that monster after battle.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "fiends-hand",
+      "name": "Fiend's Hand",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Tunneler\nDimension: Add 1 Trap to your crest pool.\nIf you attack an opponent's monster with a tunneler, it is Infected 1.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        },
+        {
+          "name": "Infected",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "flame-dancer",
+      "name": "Flame Dancer",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Once per turn, after this monster moved: You can deal 10 damage to 1 monster that is within 1 square.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "fluffal-mouse",
+      "name": "Fluffal Mouse",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Flying\n(OPT) A monster within 1 square gets 10 ATK and Swift 2 until end of turn, also heal 10 damage from it.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 6
+        }
+      ],
+      "altArts": [
+        "Fluffal Mouse alt art.jpg"
+      ]
+    },
+    {
+      "id": "fortress-warrior",
+      "name": "Fortress Warrior",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Warrior-type monsters gain 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "goblin-attack-force",
+      "name": "Goblin Attack Force",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "After this monster attacks, it becomes immobilized until your next end turn.",
+      "keywords": [
+        {
+          "name": "Immobilized"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "gravity-orb",
+      "name": "Gravity Orb",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 0,
+      "effect": "Dimension: Warp all monsters that are within 3 squares to spaces within 1 square. Monsters within 1 square cannot move.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "hayabusa-knight",
+      "name": "Hayabusa Knight",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "This monster can make a second attack on monsters, without paying Attack.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "hunter-dragon",
+      "name": "Hunter Dragon",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 30,
+      "def": 0,
+      "effect": "Flying",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "jellyfish",
+      "name": "Jellyfish",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Beasts gain 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "jirai-gumo",
+      "name": "Jirai Gumo",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "Tunneler\nAttack: Roll a D6 and call even or odd. If you called wrong, you lose 2 Attack.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "killer-needle",
+      "name": "Killer Needle",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Reach",
+      "keywords": [
+        {
+          "name": "Reach"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "magician-of-faith",
+      "name": "Magician of Faith",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Magic x? Once per turn: Cast a spell from your GY (? = spell's Level x 3).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 6
+        }
+      ],
+      "altArts": [
+        "Magician of Faith alt art.jpg"
+      ]
+    },
+    {
+      "id": "mammoth-graveyard",
+      "name": "Mammoth Graveyard",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Beasts gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "medusas-ghost",
+      "name": "Medusa's Ghost",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Zombies gain 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "melffy-kani",
+      "name": "Melffy Kani",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 0,
+      "def": 30,
+      "effect": "Dimension: A monster within 3 squares loses 10 DEF.\nTrap x3 Roll a die. If the result is 4 or more, negate an attack.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "melffy-staring-contest",
+      "name": "Melffy Staring Contest",
+      "category": "item",
+      "level": 1,
+      "itemType": "Spell",
+      "effect": "Target 1 Beast you control and 1 of your opponent's monsters in line. Once per game, if one of them moves in a direction other than towards the other monster, it takes damage equal to the other monster's ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "muscle-medic",
+      "name": "Muscle Medic",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 40,
+      "def": 0,
+      "effect": "If this monster attacks, and the attack target defends, destroy this monster after the battle.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "mystic-lamp",
+      "name": "Mystic Lamp",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Spellcaster gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "mystical-elf",
+      "name": "Mystical Elf",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Dimension: Heal 10 damage from all of your monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ],
+      "altArts": [
+        "Mystical Elf alt art.jpg"
+      ]
+    },
+    {
+      "id": "newt",
+      "name": "Newt",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 20,
+      "def": 0,
+      "effect": "Tunneler\nOnce per duel: This monster gains 10 ATK and DEF, but cannot move this turn.\nAny monster that destroys this monster by battle loses 10 ATK and DEF.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ],
+      "altArts": [
+        "Newt alt art.jpg"
+      ]
+    },
+    {
+      "id": "nightmare-scorpion",
+      "name": "Nightmare Scorpion",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "Tunneler\nIf this monster battles, deal 10 damage to the opponent's monster after battle.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "nimble-momonga",
+      "name": "Nimble Momonga",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Dimension: Add 1 Movement to your crest pool.\nYour Level 1 and Level 2 Beasts have swift 2.",
+      "keywords": [
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "one-eyed-shield-dragon",
+      "name": "One-Eyed Shield Dragon",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 30,
+      "effect": "Dimension: Add 1 Defense to your crest pool.\nWhen one of your Dragons is attacked and you don't use a Defense, your Dragon still has 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "parrot-dragon",
+      "name": "Parrot Dragon",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Flying\nAll Dragons gain 10 DEF.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "penguin-soldier",
+      "name": "Penguin Soldier",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Dimension: Choose 1 monster on the board, and place it on an adjacent space next to it's DM.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "peten-the-dark-clown",
+      "name": "Peten the Dark Clown",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 20,
+      "effect": "Twice per duel: If this monster is destroyed, during your next roll, you can resurrect it to a space adjacent to your DM.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "petit-dragon",
+      "name": "Petit Dragon",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Dragons gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "poki-draco",
+      "name": "Poki Draco",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Constellation with Poki Draco",
+      "keywords": [
+        {
+          "name": "Constellation",
+          "value": "Poki Draco"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "princess-of-tsurugi",
+      "name": "Princess of Tsurugi",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: Deal 10 damage to each of your opponent's monsters for each of your opponent's items.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "red-moon-baby",
+      "name": "Red-Moon Baby",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "If this monster destroys a monster by battle, you can resurrect it to the same space it got destroyed in.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "rock-ogre-grotto-1",
+      "name": "Rock Ogre Grotto 1",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Spellcaster gain 10 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "rush-warrior",
+      "name": "Rush Warrior",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: Add 1 Movement to your crest pool.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "shiens-spy",
+      "name": "Shien's Spy",
+      "category": "item",
+      "level": 1,
+      "itemType": "Spell",
+      "effect": "Spell\nGive control of one of your monsters to your opponent until end of turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "silver-fang",
+      "name": "Silver Fang",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: Add 1 Trap to your crest pool.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "steel-scorpion",
+      "name": "Steel Scorpion",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 20,
+      "effect": "Tunneler\nA Monster that attacked this monster gains 20 damage after battle.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "summoner-monk",
+      "name": "Summoner Monk",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 0,
+      "def": 10,
+      "effect": "This monster has the same Level and the same Summon Crests at the same dice numbers as all other cards while rolling.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "zombie-warrior",
+      "name": "Zombie Warrior",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "All Zombies gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "zombowwow",
+      "name": "Zombowwow",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "If this monster is destroyed, resurrect one Level 1 Zombie other than Zombowwow. It gains +10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "7",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Continuous Spell\nIf you have 3 \"7\" in play, you get Starsurge 3.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "a-man-with-wdjat",
+      "name": "A Man with Wdjat",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Magic x3 Reveal one item on the field.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "adhesion-trap-hole",
+      "name": "Adhesion Trap Hole",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "effect": "The trapped Monster becomes immobilized for 3 turns.",
+      "keywords": [
+        {
+          "name": "Immobilized"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "armored-bee",
+      "name": "Armored Bee",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Trap x3 Once per turn: Halve the ATK or DEF of one monster within 3 squares, until end of turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "ash-blossom-and-joyous-springs",
+      "name": "Ash Blossom & Joyous Springs",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 0,
+      "def": 30,
+      "effect": "Trap x3 If your opponent would add crests to his crest pool, negate it. Can only be used once by this monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ],
+      "altArts": [
+        "Ash Blossom alt art.jpg"
+      ]
+    },
+    {
+      "id": "backup-soldier",
+      "name": "Backup Soldier",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nChoose 3 vanilla monsters in your GY, and put them back into your deck. Those monsters gain starsurge 2 and beacon.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 2
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "battle-ox",
+      "name": "Battle Ox",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "big-shield-gardna",
+      "name": "Big Shield Gardna",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 40,
+      "effect": "This monster can defend without spending a Defense. If you do, this monster loses 10 DEF after the battle.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "breaker-the-magical-warrior",
+      "name": "Breaker the Magical Warrior",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "Magic x5 Once per turn: Destroy one Item on the field.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "call-of-the-mummy",
+      "name": "Call of the Mummy",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Before your roll: This turn, you can give your Zombies Starsurge 1, and if you dimension a Zombie, that monster's Dungeon Piece must touch this card's Dungeon Piece.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "catapult-zone",
+      "name": "Catapult Zone",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "When a monster moves into this item in a straight line, Advance it in the same direction by the number of tiles it moved in that straight line.",
+      "keywords": [
+        {
+          "name": "Advance"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "cattle-call",
+      "name": "Cattle Call",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Before your roll: This turn, you can give your Beasts Starsurge 1, and if you dimension a Beast, that monster's Dungeon Piece must touch this card's Dungeon Piece.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "chain-disappearance",
+      "name": "Chain Disappearance",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "effect": "Trap\nIf your opponent dimensions a Level 1 monster: Destroy and seal every monster with that monster's name. Your opponent cannot summon monsters with the same name for the rest of the game.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "chow-len-the-prophet",
+      "name": "Chow Len the Prophet",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Magic x4 Negate the effect of an item. Then, if it's a trap, set it back face-down. If it's a spell, put it back into your opponent's crest pool and give it starsurge 1.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "command-knight",
+      "name": "Command Knight",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "All your other Warrior-type monsters gain 20 ATK.\nDefense x3 Negate all damage done to this monster by an attack.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "copycat",
+      "name": "Copycat",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "effect": "Dimension: Choose one of your opponent's monsters. This monster's stats become the opponent's original stats.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "corroding-shark",
+      "name": "Corroding Shark",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "darkfire-soldier-1",
+      "name": "Darkfire Soldier 1",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "darkfire-soldier-2",
+      "name": "Darkfire Soldier 2",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "When this monster attacks: Deal 10 damage at the end of the battle. If you control a \"Darkfire Soldier 1\", deal 20 damage instead.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "double-summon",
+      "name": "Double Summon",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nDuring your next roll, if you roll 2 or more summon crests, you can dimension up to 2 of them.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "draconic-tactics",
+      "name": "Draconic Tactics",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Before your roll: This turn, you can give your Dragons Starsurge 1, and if you dimension a Dragon, that monster's Dungeon Piece must touch this card's Dungeon Piece.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "dunames-dark-witch",
+      "name": "Dunames Dark Witch",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Magic x3 Increase the ATK of one of your monsters by 10.\nMagic x3 Decrease the DEF of one of your opponent's monsters by 10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "element-doom",
+      "name": "Element Doom",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 20,
+      "def": 10,
+      "effect": "This monster gets effects based on monster types you control:\nBeast: Gain Swift 2\nSpellcaster: Gain 20 DEF",
+      "keywords": [
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "element-dragon",
+      "name": "Element Dragon",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 10,
+      "def": 20,
+      "effect": "This monster gets effects based on monster types you control:\nSpellcaster: Gain 20 DEF\nWarrior: Gain 20 ATK",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "element-magician",
+      "name": "Element Magician",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 10,
+      "def": 30,
+      "effect": "This monster gets effects based on monster types you control:\nZombie: Gain Tunneler\nDragon: Gain Starburst 1",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        },
+        {
+          "name": "Starburst",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "element-saurus",
+      "name": "Element Saurus",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 30,
+      "def": 20,
+      "effect": "This monster gets effects based on monster types you control:\nWarrior: Gain 20 ATK\nZombie: Gain Tunneler",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "element-soldier",
+      "name": "Element Soldier",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 30,
+      "def": 10,
+      "effect": "This monster gets effects based on monster types you control:\nDragon: Gain starsurge 1\nBeast: Gain swift 2",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        },
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "elemental-burst",
+      "name": "Elemental Burst",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nCan only be activated when you control 5 monsters with different types. Destroy all opponent's cards.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "embodiment-of-apophis",
+      "name": "Embodiment of Apophis",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "itemSubtype": "Trap Monster",
+      "effect": "Trap Monster (Zombie, 10/30/10)\nIf an opponent's monster triggered this Trap Monster, attack it immediately.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "explossum",
+      "name": "Explossum",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Trap x? Once per turn: Destroy 1 monster within 3 spaces. (? = monster's level + 2)",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "feral-imp",
+      "name": "Feral Imp",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 20,
+      "effect": "All monsters lose flying.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "fissure",
+      "name": "Fissure",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nDestroy the opponent's monster with the lowest ATK (your choice if tied).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "flame-swordsman",
+      "name": "Flame Swordsman",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "foolish-burial",
+      "name": "Foolish Burial",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nChoose one of your monsters in your deck, and send it to the GY.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "giant-trap-hole",
+      "name": "Giant Trap Hole",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "effect": "Req: At least 3 monsters within 5 squares\nDestroy all monsters within 5 squares.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "graceful-dice",
+      "name": "Graceful Dice",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nRoll a D6. Increase the ATK of one of your monsters by rolled number x 10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "great-maju-garzett",
+      "name": "Great Maju Garzett",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 0,
+      "def": 10,
+      "effect": "Dimension: You can destroy 1 of your monsters. This monster's ATK becomes double the destroyed monster's ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 8
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "green-gadget",
+      "name": "Green Gadget",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 30,
+      "def": 10,
+      "effect": "Dimension: During your next roll, if you roll only the Summon Crest of \"Red Gadget\", you may still dimension it.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "harpie-lady",
+      "name": "Harpie Lady",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Flying\nDimension: Destroy a tunneler.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "inferno-reckless-summon",
+      "name": "Inferno Reckless Summon",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "During your next roll, if you use 3 of the same monster, they gain starsurge 3. During your opponent's next roll, his monsters gain Starsurge 2.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 3
+        },
+        {
+          "name": "Starsurge",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "king-tiger-wanghu",
+      "name": "King Tiger Wanghu",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "Trap x4 When a monster with 10 ATK or less is dimensioned: Destroy it. If you summoned it, it gets destroyed without paying the cost.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "knight-of-twin-swords",
+      "name": "Knight of Twin Swords",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 10,
+      "def": 10,
+      "effect": "Swift 2\nAttack: You can pay up to 2 Attack. Multiply this monster's ATK by the number you paid.",
+      "keywords": [
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "la-jinn-the-mystical-genie-of-the-lamp",
+      "name": "La Jinn the Mystical Genie of the Lamp",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 5
+        }
+      ],
+      "altArts": [
+        "La Jinn the mystical Genie of the Lamp alt art.jpg"
+      ]
+    },
+    {
+      "id": "legendary-ebon-steed",
+      "name": "Legendary Ebon Steed",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "effect": "Trap\nWarrior monster\nThe trapped monster gets Swift 2 and the following effect: \"When attacking, increase this monster's ATK by 10 for every 3 tiles moved this turn.\"",
+      "keywords": [
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "level-modulation",
+      "name": "Level Modulation",
+      "category": "item",
+      "level": 2,
+      "itemType": null,
+      "effect": null,
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "magic-cylinder",
+      "name": "Magic Cylinder",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "itemSubtype": "DM Trap",
+      "effect": "DM Trap\nThe attacking monster attacks an opponent's monster or the opponent DM, whoever is closest in a straight line, instead.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 8
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "magical-blast",
+      "name": "Magical Blast",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nChoose one of your monsters. This turn, it can attack a monster that is horizontally or vertically to it.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "man-eater-bug",
+      "name": "Man-Eater Bug",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: You can destroy 1 monster that is within 5 squares.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "marshmallon",
+      "name": "Marshmallon",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Defense x2 Prevent all damage done to this monster from attacks.\nDefense x3 Prevent all damage done to this monster from attacks. The attacking monster loses 10 HP.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "masked-dragon",
+      "name": "Masked Dragon",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Your flying Dragons need 1 Movement to move.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "mezuki",
+      "name": "Mezuki",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 30,
+      "def": 10,
+      "effect": "Trap x4 Once per duel: Use this only when this monster is in your GY. Resurrect one Zombie.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "necroface",
+      "name": "Necroface",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Dimension: Any monster in your GY loses sealed. This monster gains 10 ATK for each.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ],
+      "altArts": [
+        "Necroface alt art.jpg"
+      ]
+    },
+    {
+      "id": "phantom-of-chaos",
+      "name": "Phantom of Chaos",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 0,
+      "def": 10,
+      "effect": "Once per turn: Choose a monster in your GY. Copy its ATK and effect until end of turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "plaguespreader-zombie",
+      "name": "Plaguespreader Zombie",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "A monster who fights with this monster, is infected 3.\nTrap x4 Once per game: Resurrect this monster.",
+      "keywords": [
+        {
+          "name": "Infected",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "prohibition",
+      "name": "Prohibition",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Continuous Spell\nNeither player can use the same shape of tile that this card was dimensioned on.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "reborn-tengu",
+      "name": "Reborn Tengu",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "When a \"Reborn Tengu\" was destroyed during your or your opponent's last turn, this monster gets starsurge 4 and beacon.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 4
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "red-gadget",
+      "name": "Red Gadget",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 20,
+      "def": 30,
+      "effect": "Dimension: During your next roll, if you roll only the Summon Crest of \"Yellow Gadget\", you may still dimension it.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "reinforcement-of-the-armys-troops",
+      "name": "Reinforcement of the Army's Troops",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Before your roll: This turn, you can give your Warriors Starsurge 1, and if you dimension a Warrior, that monster's Dungeon Piece must touch this card's Dungeon Piece.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "resurrection-scroll",
+      "name": "Resurrection Scroll",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nResurrect one of your monsters to this item's space.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "ryu-ran",
+      "name": "Ryu-Ran",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Swap any 3 crests for 3 Defense.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "scrap-iron-scarecrow",
+      "name": "Scrap-Iron Scarecrow",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "itemSubtype": "DM Trap",
+      "effect": "DM Trap\nTrap x1 The first time each round your opponent attacks your DM, he has to pay 2 additional Attack in order to attack. Set this trap after the activation.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "shield-and-sword",
+      "name": "Shield & Sword",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nSwap the ATK and DEF of all monsters in a dungeon until end of turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "skull-dice",
+      "name": "Skull Dice",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nRoll a D6. Decrease the DEF of an opponent's monster by rolled number x 10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "sorcerous-spell-wall",
+      "name": "Sorcerous Spell Wall",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Continuous Spell\nAll of your spellcasters gain +20 DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "spellbook-of-power",
+      "name": "Spellbook of Power",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "effect": "Spell\nAll of your spellcasters gain +20 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "stronghold-the-moving-fortress",
+      "name": "Stronghold the Moving Fortress",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "itemSubtype": "Trap Monster",
+      "effect": "Trap Monster (Warrior, 30/0/30)\nThis monster cannot move.\nIf you control Green, Yellow, and Red Gadget, apply the following effects, instead:\n- You can summon this Trap Monster.\n- Increase this monster's ATK by 30.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "swamp-battleguard",
+      "name": "Swamp Battleguard",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Attack x1 Attack: Increase this monster's ATK by 10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "the-immortal-bushi",
+      "name": "The Immortal Bushi",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "Magic x3 Activate at the start of your turn. Resurrect this monster. Can only be used if all your monsters on the board are Warrior-type.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "thousand-dragon",
+      "name": "Thousand Dragon",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "togex",
+      "name": "Togex",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Dimension: Place this monster on any tile of the Dimension Dungeon Piece.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "tyhone-2",
+      "name": "Tyhone 2",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Flying, Range 2\nThis monster can attack up to two aligned monsters at once.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Range",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "venom-swamp",
+      "name": "Venom Swamp",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "If a non-Zombie monster is within 3 squares: It gets Sluggish 2, and also take 10 damage at the end of turn as long as it is Sluggish.",
+      "keywords": [
+        {
+          "name": "Sluggish",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "white-ninja",
+      "name": "White Ninja",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "Attack: If this monster moved from a space within 1 square of the attacked monster to the space on the opposite side of that monster, destroy that monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "winged-dragon-1",
+      "name": "Winged Dragon 1",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Flying\nPrevent all Tunneling. If you also have \"Winged Dragon 2\" in play, Creatures with Tunneling need 2 Move Crests to move.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ],
+      "altArts": [
+        "Winged Dragon 1 alt art.jpg"
+      ]
+    },
+    {
+      "id": "winged-dragon-2",
+      "name": "Winged Dragon 2",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 20,
+      "def": 30,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "yaranzo",
+      "name": "Yaranzo",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Exchange any 3 crests in your crest pool for 1 crest of your choice.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "yellow-gadget",
+      "name": "Yellow Gadget",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Dimension: During your next roll, if you roll only the Summon Crest of \"Green Gadget\", you may still dimension it.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "anagora",
+      "name": "Anagora",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 30,
+      "def": 30,
+      "effect": "Tunneler\nWhen another of your monster is attacked, by paying the appropriate number of Attack, this monster can move to that monster's position, and become the new attacking target (the other monster moves to an adjacent space)",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "balance-of-judgment",
+      "name": "Balance of Judgment",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "effect": "Spell\nTake all crests from both players and redistribute them so that every crest type has the same amount. Remove any excess ones.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "blowback-dragon",
+      "name": "Blowback Dragon",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 30,
+      "def": 30,
+      "effect": "Dimension: Destroy the monster that is the closest either horizontally or vertically to this monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "buster-blader",
+      "name": "Buster Blader",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 40,
+      "def": 10,
+      "effect": "This monster is unaffected by effects of Dragon monsters. Ignore all damage from Dragon monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "castle-gate",
+      "name": "Castle Gate",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 0,
+      "def": 50,
+      "effect": "Immobilized\nAll tiles in a horizontal line are blocked.\nYour monsters can move through this monster.",
+      "keywords": [
+        {
+          "name": "Immobilized"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "chain-summoning",
+      "name": "Chain Summoning",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "Trap\nActivate this if you rolled 3 Summon Crests of the same level. Summon up to 3 of them.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "chaos-command-magician",
+      "name": "Chaos Command Magician",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Magic x3 Negate the effect of a card that chooses this monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "creature-swap",
+      "name": "Creature Swap",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "effect": "Spell\nBoth players choose one of their monsters. Swap the control and the position of those monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "cyber-dinosaur",
+      "name": "Cyber Dinosaur",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "If your opponent dimensioned a Level 3 or higher card in his last turn, this monster has starsurge 2.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "id": "cyber-dragon",
+      "name": "Cyber Dragon",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 30,
+      "def": 20,
+      "effect": "If your opponent controls a monster and you don't, this monster has starsurge 2.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "cyber-shadow-gardna",
+      "name": "Cyber Shadow Gardna",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "itemSubtype": "Trap Monster",
+      "effect": "Trap Monster (10/0/10)\nQuiescent\nAttack the trapped monster. This monster's ATK becomes the opponent's monster's ATK. Set it back face-down after the battle.",
+      "keywords": [
+        {
+          "name": "Quiescent"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "dark-red-enchanter",
+      "name": "Dark Red Enchanter",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "If you rolled the summon crest of a spell when you summoned this monster, you can also activate that spell.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "des-volstgalph",
+      "name": "Des Volstgalph",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "When a spell is activated, this monster gains 10 ATK.\nWhen an opponent's monster moves within one square of this monster, deal 10 damage to it.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "doma-angel-of-silence",
+      "name": "Doma, Angel of Silence",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Flying\nDimension: Destroy all monsters that were dimensioned from the GY. Any monster that is sent to the GY gets sealed.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "empress-mantis",
+      "name": "Empress Mantis",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 30,
+      "def": 20,
+      "effect": "Trap x3 If one of your opponent's Level 1 Monsters is within 1 square of this monster: Destroy it.\nMagic x3 If this monster moves, you can warp one of your Level 2 or lower Beasts up to the same amount of spaces.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "freed-the-matchless-general",
+      "name": "Freed the Matchless General",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "Your Warriors have starsurge 1.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "garnecia-elefantis",
+      "name": "Garnecia Elefantis",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 40,
+      "atk": 30,
+      "def": 20,
+      "effect": "sluggish 2\nAfter moving, deal 10 damage to every monster next to this monster.",
+      "keywords": [
+        {
+          "name": "Sluggish",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "great-moth",
+      "name": "Great Moth",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 40,
+      "atk": 30,
+      "def": 30,
+      "effect": "Flying",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "great-shogun-shien",
+      "name": "Great Shogun Shien",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 30,
+      "def": 30,
+      "effect": "Your opponent can only activate one item, or one Magic or Trap effect.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "grinning-grave-virus",
+      "name": "Grinning Grave Virus",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "Trap\nYou have to destroy your trapped Zombie in order to activate this effect. Until the 3rd end of your opponent's turn, destroy any infected monster.",
+      "keywords": [
+        {
+          "name": "Infected"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "gyakutenno-megami",
+      "name": "Gyakutenno Megami",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 30,
+      "effect": "Magic x5 If you didn't successfully summon a monster during your roll, sacrifice this monster, and repeat your roll.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "insect-queen",
+      "name": "Insect Queen",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 20,
+      "def": 30,
+      "effect": "Gains 10 ATK for each Beast on the board.\nMagic x5 Place 1 obstacle on a space that's within 5 spaces.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "invitation-to-a-dark-sleep",
+      "name": "Invitation to a Dark Sleep",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Double the amount of Magic you roll.\nMagic x3 Gain 1 Attack.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "lava-golem",
+      "name": "Lava Golem",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 30,
+      "def": 30,
+      "effect": "Cannot move. If your opponent has at least two monsters within one square: Gain starsurge 2.\nDimension: Warp this monster within 1 square of an opponent's monster. Any monsters within 1 square become Immobilized, and gain 10 damage at the end of the turn.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 2
+        },
+        {
+          "name": "Immobilized"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ],
+      "altArts": [
+        "Lava Golem alt art.jpg"
+      ]
+    },
+    {
+      "id": "left-arm-of-the-forbidden-one",
+      "name": "Left Arm of the Forbidden One",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 0,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "left-leg-of-the-forbidden-one",
+      "name": "Left Leg of the Forbidden One",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 0,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "lightning-vortex",
+      "name": "Lightning Vortex",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "effect": "Spell\nDestroy all of your opponent's monsters who are horizontally or vertically to this card.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "maximum-six",
+      "name": "Maximum Six",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Dimension: Roll a D6. This monster gains ATK x result.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "mirror-force",
+      "name": "Mirror Force",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "itemSubtype": "DM Trap",
+      "effect": "DM Trap\nDestroy the attacking monster, and any opponent's monster within 5 spaces.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "naturia-beast",
+      "name": "Naturia Beast",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "Trap x5 Negate the activation of a spell.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "nobleman-eater-bug",
+      "name": "Nobleman-Eater Bug",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Dimension: You can destroy up to 2 monsters that are within 7 squares.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "orgoth-the-relentless",
+      "name": "Orgoth the Relentless",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 20,
+      "def": 20,
+      "effect": "Magic x2 Increase this monster's ATK by 10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 8
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "parasite-paracide",
+      "name": "Parasite Paracide",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 0,
+      "def": 10,
+      "effect": "(OPD) Dimension: Put this monster into your opponent's dice pool with starsurge 4 and beacon. They have to use and dimension it during their next roll. If dimensioned this way: All of your monsters get 10 damage, and your DM gets 1 damage (cannot lose your last life).",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 4
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 8
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 4
+        }
+      ],
+      "altArts": [
+        "Parasite Paracide alt art.jpg"
+      ]
+    },
+    {
+      "id": "patrician-of-darkness",
+      "name": "Patrician of Darkness",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 20,
+      "def": 20,
+      "effect": "Magic x3 If this monster is attacked, swap places with another of your monsters, until end of battle, that fights instead.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-of-powerlessness",
+      "name": "Proof of Powerlessness",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "Can only be activated when the trapped monster is a Level 4. Destroy all of your opponent's Level 1 - 3 monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "right-arm-of-the-forbidden-one",
+      "name": "Right Arm of the Forbidden One",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 0,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "right-leg-of-the-forbidden-one",
+      "name": "Right Leg of the Forbidden One",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 0,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "road-warrior",
+      "name": "Road Warrior",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "You can place 2 tiles when you dimension this monster. Place it in any of the 2 summon stars.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ],
+      "altArts": [
+        "Road Warrior alt art.jpg"
+      ]
+    },
+    {
+      "id": "ryu-kokki",
+      "name": "Ryu Kokki",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 30,
+      "def": 10,
+      "effect": "If this monster battles a Warrior or Dragon, destroy it at the end of the battle.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "solidarity",
+      "name": "Solidarity",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "effect": "If all your monsters have the same type, increase their ATK by 20.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "strike-ninja",
+      "name": "Strike Ninja",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "This monster can move up to 3 spaces for 1 Movement. Trap x2 Negate any damage or effects done to this monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "the-flute-of-summoning-dragon",
+      "name": "The Flute of Summoning Dragon",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "Req: \"Lord of D.\" During your next roll, your Dragons gain starsurge 5, and 1 of them gains Constellation to Dragons.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 5
+        },
+        {
+          "name": "Constellation",
+          "value": "Dragons"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "total-defense-shogun",
+      "name": "Total Defense Shogun",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 50,
+      "effect": "Defense x3 This monster uses its DEF value when attacking (you don't pay Attack).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "tri-wight",
+      "name": "Tri-Wight",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "effect": "Resurrect three Level 1 monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "vampire-lord",
+      "name": "Vampire Lord",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "At the start of your turn, if this monster was destroyed by a card effect last turn, resurrect this monster to the same tile (or an adjacent, if occupied).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 7
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "warp-vortex",
+      "name": "Warp Vortex",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Monsters can warp between any \"Warp Vortex\" in the dungeon.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ],
+      "altArts": [
+        "Warp Vortex alt.jpg"
+      ]
+    },
+    {
+      "id": "beast-king-barbaros",
+      "name": "Beast King Barbaros",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 40,
+      "def": 20,
+      "effect": "Dimension: If you rolled three Level 4 Summon Crests this turn, destroy all of your opponent's monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "block-dragon",
+      "name": "Block Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 30,
+      "def": 40,
+      "effect": "Dimension: Remove any number of Dungeon Pieces, connected to the dimensioned Dungeon Piece. You can then place new ones, up to the same number, connected to either the dimensioned Dungeon Piece, or each other. Destroy all monsters that are not on a tile afterwards.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "black-luster-soldier",
+      "name": "Black Luster Soldier",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Warrior",
+      "hp": 40,
+      "atk": 40,
+      "def": 30,
+      "effect": "If this monster destroys another monster by battle, it can make a second attack this turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "blue-eyes-white-dragon",
+      "name": "Blue-Eyes White Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 50,
+      "atk": 40,
+      "def": 30,
+      "effect": "Flying",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "chimeratech-overdragon",
+      "name": "Chimeratech Overdragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 40,
+      "atk": 40,
+      "def": 40,
+      "effect": "Range 3\nThis monster can attack all of your opponent's monsters once.",
+      "keywords": [
+        {
+          "name": "Range",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "dark-magician",
+      "name": "Dark Magician",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 30,
+      "atk": 40,
+      "def": 20,
+      "effect": "Magic x2 Once per turn: Swap places with an adjacent monster, then destroy that monster.\nTrap x2 If this monster is attacked, or chosen by an effect: Your opponent rolls a die. If the result is 1-4, negate the attack/effect.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "dark-sage",
+      "name": "Dark Sage",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 30,
+      "atk": 30,
+      "def": 30,
+      "effect": "Dimension: Set your Magic count in your crest pool to 20.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "darkness-destroyer",
+      "name": "Darkness Destroyer",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 40,
+      "def": 30,
+      "effect": "This monster can make a second attack on monsters in a turn. Magic x7 During a battle, decrease the opponent's monster's DEF by 7x10.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "despair-from-the-dark",
+      "name": "Despair from the Dark",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 40,
+      "def": 50,
+      "effect": "Effects to resurrect this monster cost 2 crests less to use.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ],
+      "altArts": [
+        "Despair from the Dark alt art.jpg"
+      ]
+    },
+    {
+      "id": "destruction-god-lani",
+      "name": "Destruction God - Lani",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 0,
+      "def": 40,
+      "effect": "Gains 10 ATK for each Zombie in your GY. If one of your Zombies, or an opponent's monster, moves, and gets within 5 spaces of this monster at any time, you can move this monster the same number of spaces, for free.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ],
+      "altArts": [
+        "Destruction God - Lani alt art.jpg"
+      ]
+    },
+    {
+      "id": "exodia-the-forbidden-one",
+      "name": "Exodia the Forbidden One",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Dimension: If you control all 5 pieces of Exodia, you win the game.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "fgd",
+      "name": "F.G.D.",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "effect": "Flying\nCan only be dimensioned if you have at least 5 Dragons in your GY.\nDimension: Destroy 1 of your opponent's monsters.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "gaia-the-fierce-knight",
+      "name": "Gaia the Fierce Knight",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Warrior",
+      "hp": 40,
+      "atk": 40,
+      "def": 20,
+      "effect": "Reach",
+      "keywords": [
+        {
+          "name": "Reach"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "gilford-the-lightning",
+      "name": "Gilford the Lightning",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 40,
+      "def": 20,
+      "effect": "Starbound\nDimension: If you rolled three Level 4 Summon Crests during your roll: destroy all of your opponent's monsters.",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 8
+        }
+      ],
+      "altArts": [
+        "Gilford the Lightning alt art.jpg"
+      ]
+    },
+    {
+      "id": "gorz-the-emissary-of-darkness",
+      "name": "Gorz the Emissary of Darkness",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 40,
+      "atk": 40,
+      "def": 40,
+      "effect": "If your DM took damage by an attack while you control no cards, this monster gets starsurge 5 and beacon during your next roll.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 5
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "grandtusk-dragon",
+      "name": "Grandtusk Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 10,
+      "def": 30,
+      "effect": "Dimension: Destroy up to two figures within five squares. This monster gains 20 ATK for each destroyed card.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "green-baboon",
+      "name": "Green Baboon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 40,
+      "def": 30,
+      "effect": "Trap x5 If one of your Beasts is destroyed: Resurrect this monster to the same space.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "guardian-angel-joan",
+      "name": "Guardian Angel Joan",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 40,
+      "atk": 50,
+      "def": 30,
+      "effect": "If this monster destroys a monster by battle, heal all of your monsters by the amount of the destroyed monster's ATK, also heal your DM by 1.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "humpty-grumpty",
+      "name": "Humpty Grumpty",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 0,
+      "def": 0,
+      "effect": "If you roll this dice, at least one other dice must be LV4. You must dimension this monster if possible.\nDimension: Set all your Crests to 0.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 10
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 10
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 10
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 10
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": "kaien-the-emissary-of-darkness",
+      "name": "Kaien the Emissary of Darkness",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 40,
+      "atk": 30,
+      "def": 30,
+      "effect": "Constellation with Gorz\nWhen you roll the dimension crest of Gorz, this monster gets starsurge 5, and \"Dimension: Gain 10 ATK and DEF for every life your DM lost.\"",
+      "keywords": [
+        {
+          "name": "Constellation",
+          "value": "Gorz"
+        },
+        {
+          "name": "Starsurge",
+          "value": 5
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "last-turn",
+      "name": "Last Turn",
+      "category": "item",
+      "level": 4,
+      "itemType": "Trap",
+      "effect": "Req: Your DM has 1 life.\nSend all cards to the GYs, except 1 of your monsters. Your opponent Dimensions 1 monster from their dice pool or GY. Players cannot Dimension cards, and DMs cannot take damage. Play until only 1 monster remains in the dungeon. Its owner wins. If none remain, you lose.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "magician-of-black-chaos",
+      "name": "Magician of Black Chaos",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 40,
+      "atk": 40,
+      "def": 30,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "mighty-mage",
+      "name": "Mighty Mage",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 50,
+      "atk": 30,
+      "def": 20,
+      "effect": "Dimension: Move 2 Dungeon Pieces on the field to new legal spots (Monsters stay on them).\nThis monster can attack monsters within 2 squares.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "magic",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "mimicking-man-eater-bug",
+      "name": "Mimicking Man-Eater Bug",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 10,
+      "def": 30,
+      "effect": "Dimension: You can destroy a monster, gain ATK equal to the destroyed monster's ATK, and become that monster's type. Unaffected by the effects of monsters of the same type.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "magic",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "red-eyes-darkness-metal-dragon",
+      "name": "Red-Eyes Darkness Metal Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 20,
+      "atk": 40,
+      "def": 30,
+      "effect": "Flying\nIf you rolled the summon crest of this monster, you can tribute 1 Dragon to give this monster beacon.\nMagic x5 Once per duel: Resurrect 1 Dragon.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 7
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "red-eyes-zombie-dragon",
+      "name": "Red-Eyes Zombie Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 40,
+      "def": 40,
+      "effect": "Magic x5 If this monster destroys a monster by battle, resurrect it to the same tile under your control as a Zombie.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "scrap-dragon",
+      "name": "Scrap Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 40,
+      "def": 20,
+      "effect": "Dimension: You can destroy one of your and one of your opponent's monsters.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "spatial-collapse",
+      "name": "Spatial Collapse",
+      "category": "item",
+      "level": 4,
+      "itemType": "Spell",
+      "effect": "During each End of Turn, block the outmost unblocked lines of the dungeon. Both DMs get pushed forward 1 tile. Each card that occupies a blocked tile advances inward 1 tile. If it can't, it is destroyed.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "magic",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "super-war-lion",
+      "name": "Super War Lion",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 40,
+      "atk": 40,
+      "def": 30,
+      "effect": "All your other Beasts gain 20 ATK.\nIf a Beast attacks, it gains the ATK of all adjacent Beasts you control.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "magic",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "tiras-keeper-of-armageddon",
+      "name": "Tiras, Keeper of Armageddon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Warrior",
+      "hp": 40,
+      "atk": 40,
+      "def": 40,
+      "effect": "Indestructable\nAfter this monster battles: You can destroy a card within 5 squares. At the end of your turn, this monster looses 20 DEF.",
+      "keywords": [
+        {
+          "name": "Indestructable"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "vandalgyon",
+      "name": "Van'Dalgyon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 40,
+      "def": 40,
+      "effect": "Flying\nOnce per turn: If an opponent's card got destroyed by the effect of one of your cards, use one of these effects, based on the type of your card:\n- Monster: Next roll: Dragons gain starsurge 2.\n- Spell: One of your monsters gains 20 ATK.\n- Trap: Destroy one item.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Starsurge",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "magic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "yellow-baboon",
+      "name": "Yellow Baboon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 40,
+      "def": 30,
+      "effect": "When one of your Beasts is destroyed by battle: This monster gains starsurge 2 during your next roll.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}
