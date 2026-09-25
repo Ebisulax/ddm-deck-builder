@@ -1234,3 +1234,348 @@ button:disabled {
         max-height: 42vh;
     }
 }
+
+/* =========================================================
+   150% UI SIZE
+   ========================================================= */
+
+.page-layout {
+    max-width: 1900px;
+
+    padding: 15px;
+
+    grid-template-columns:
+        minmax(705px, .85fr)
+        minmax(1050px, 1.3fr);
+
+    gap: 15px;
+}
+
+
+.deck-panel {
+    padding: 16px;
+}
+
+
+.browser-panel {
+    padding: 14px;
+}
+
+
+.panel-heading {
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+.panel-heading h2 {
+    font-size: 1.5rem;
+}
+
+
+.description {
+    font-size: 1.05rem;
+}
+
+
+.deck-count {
+    font-size: 1.35rem;
+}
+
+
+/* Deck */
+
+.deck-grid {
+    gap: 8px;
+}
+
+
+.deck-slot {
+    border-radius: 7px;
+
+    font-size: 1.05rem;
+}
+
+
+.remove-card {
+    width: 31px;
+    height: 31px;
+
+    font-size: 1.2rem;
+}
+
+
+.deck-stats {
+    margin-top: 11px;
+
+    padding: 9px 11px;
+
+    font-size: 1.05rem;
+}
+
+
+/* Main filter */
+
+.compact-search-panel {
+    margin-bottom: 11px;
+}
+
+
+.search-main-row {
+    padding: 8px;
+
+    gap: 6px;
+}
+
+
+.main-search {
+    min-width: 225px;
+
+    height: 45px;
+
+    padding: 6px 11px;
+
+    font-size: 1.14rem;
+}
+
+
+.compact-toggle-group {
+    gap: 3px;
+}
+
+
+.compact-toggle-group span {
+    min-width: 42px;
+
+    padding: 9px;
+
+    font-size: .99rem;
+}
+
+
+.compact-sort {
+    width: 123px;
+    height: 45px;
+
+    font-size: 1.02rem;
+}
+
+
+.compact-button {
+    height: 45px;
+
+    padding: 5px 11px;
+
+    font-size: 1.02rem;
+}
+
+
+.icon-button {
+    width: 46px;
+
+    font-size: 1.5rem;
+}
+
+
+/* More filters */
+
+.advanced-filters {
+    padding: 9px;
+}
+
+
+.advanced-filter-row {
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.mini-filter label {
+    font-size: .93rem;
+}
+
+
+.mini-filter input,
+.mini-filter select {
+    height: 40px;
+
+    padding: 3px 8px;
+
+    font-size: 1.02rem;
+}
+
+
+.stats-filter-row {
+    gap: 12px;
+
+    margin-bottom: 9px;
+}
+
+
+.stat-filter {
+    grid-template-columns:
+        48px 84px 90px;
+
+    gap: 5px;
+}
+
+
+.stat-filter strong {
+    font-size: .96rem;
+}
+
+
+.stat-filter select,
+.stat-filter input {
+    height: 38px;
+
+    font-size: .95rem;
+}
+
+
+/* Crests */
+
+.crest-header {
+    gap: 12px;
+
+    margin-bottom: 8px;
+
+    font-size: .99rem;
+}
+
+
+.crest-filter-grid {
+    gap: 6px;
+}
+
+
+.crest-filter {
+    gap: 6px;
+
+    padding: 5px 8px;
+}
+
+
+.crest-filter label {
+    font-size: .93rem;
+}
+
+
+.crest-filter input[type="number"] {
+    width: 53px;
+    height: 33px;
+
+    font-size: .9rem;
+}
+
+
+/* Card Browser */
+
+.card-pool {
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(188px, 1fr)
+        );
+
+    gap: 8px;
+}
+
+
+.card-result {
+    border-radius: 7px;
+}
+
+
+.card-info {
+    padding: 6px;
+}
+
+
+.card-name {
+    font-size: 1rem;
+}
+
+
+.card-meta {
+    margin-top: 3px;
+
+    font-size: .84rem;
+}
+
+
+.artwork-name {
+    margin-top: 3px;
+
+    font-size: .84rem;
+}
+
+
+.card-buttons {
+    gap: 5px;
+
+    margin-top: 6px;
+}
+
+
+.card-buttons button {
+    padding: 5px 3px;
+
+    font-size: .87rem;
+}
+
+
+.copy-count {
+    margin-top: 5px;
+
+    font-size: .8rem;
+}
+
+
+/* Preview */
+
+.preview-window {
+    width:
+        min(
+            1300px,
+            calc(100vw - 30px)
+        );
+
+    padding: 20px;
+}
+
+
+.preview-carousel {
+    grid-template-columns:
+        60px minmax(0, 1fr) 60px;
+
+    gap: 15px;
+}
+
+
+.preview-images {
+    gap: 18px;
+}
+
+
+.preview-arrow {
+    width: 60px;
+    height: 105px;
+
+    font-size: 48px;
+}
+
+
+.preview-add-row {
+    margin-top: 15px;
+}
+
+
+.preview-add-row .primary-button {
+    min-width: 210px;
+
+    padding: 11px 18px;
+
+    font-size: 1.1rem;
+}
