@@ -410,10 +410,10 @@ function alternateCandidates(
     path
 ) {
 
-    const filename =
-        filenameOnly(
-            path
-        );
+const filename =
+    filenameOnly(
+        path
+    ).toLowerCase();
 
 
     return unique([
