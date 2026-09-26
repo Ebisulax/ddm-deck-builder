@@ -6763,6 +6763,599 @@
           "amount": 2
         }
       ]
-    }
+    },
+  {
+    "id": "worm-drake",
+    "name": "Worm Drake",
+    "category": "monster",
+    "level": 1,
+    "monsterType": "Dragon",
+    "hp": 10,
+    "atk": 10,
+    "def": 20,
+    "effect": "Monsters that battled this monster are Immobilized, and cannot attack, as long as this monster is within 1 tile.",
+    "keywords": [
+      {
+        "name": "Immobilized"
+      }
+    ],
+    "crests": [
+      {
+        "roll": 5,
+        "crest": "movement",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "darkbishop-archfiend",
+    "name": "Darkbishop Archfiend",
+    "category": "monster",
+    "level": 1,
+    "monsterType": "Spellcaster",
+    "hp": 10,
+    "atk": 10,
+    "def": 20,
+    "effect": "This monster can move diagonally by paying 2 Movement.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 5,
+        "crest": "defense",
+        "amount": 1
+      },
+      {
+        "roll": 6,
+        "crest": "defense",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "dark-eyes-illusionist",
+    "name": "Dark-Eyes Illusionist",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Spellcaster",
+    "hp": 10,
+    "atk": 10,
+    "def": 10,
+    "effect": "Trap ×4 When a monster is targeted for an attack or an effect: Negate it.\nSpell ×4 Select a monster type. All monsters become that monster type until end of turn.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "movement",
+        "amount": 2
+      },
+      {
+        "roll": 4,
+        "crest": "attack",
+        "amount": 2
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 5
+      },
+      {
+        "roll": 6,
+        "crest": "defense",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "djinn-the-watcher-of-the-wind",
+    "name": "Djinn the Watcher of the Wind",
+    "category": "monster",
+    "level": 2,
+    "monsterType": "Spellcaster",
+    "hp": 20,
+    "atk": 20,
+    "def": 10,
+    "effect": "Spell ×3 Once per turn: Advance every nearest monster aligned horizontally or vertically as far away as possible from this monster.",
+    "keywords": [
+      {
+        "name": "Advance"
+      }
+    ],
+    "crests": [
+      {
+        "roll": 4,
+        "crest": "spell",
+        "amount": 1
+      },
+      {
+        "roll": 5,
+        "crest": "defense",
+        "amount": 2
+      },
+      {
+        "roll": 6,
+        "crest": "movement",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "fairy-archer",
+    "name": "Fairy Archer",
+    "category": "monster",
+    "level": 1,
+    "monsterType": "Spellcaster",
+    "hp": 10,
+    "atk": 20,
+    "def": 10,
+    "effect": "Reach, Range 3",
+    "keywords": [
+      {
+        "name": "Reach"
+      },
+      {
+        "name": "Range",
+        "value": 3
+      }
+    ],
+    "crests": [
+      {
+        "roll": 5,
+        "crest": "defense",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "attack",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "hyozanryu",
+    "name": "Hyozanryu",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Dragon",
+    "hp": 30,
+    "atk": 20,
+    "def": 40,
+    "effect": "Dimension: Gain 5 Defense Crests.\nThis monster cannot be attacked or targeted by cards that are not within 1 square.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "movement",
+        "amount": 2
+      },
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 2
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "infernity-archer",
+    "name": "Infernity Archer",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Warrior",
+    "hp": 30,
+    "atk": 20,
+    "def": 20,
+    "effect": "This monster can attack any monster in line.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "attack",
+        "amount": 4
+      },
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 1
+      },
+      {
+        "roll": 5,
+        "crest": "movement",
+        "amount": 3
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "kotodama",
+    "name": "Kotodama",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Spellcaster",
+    "hp": 50,
+    "atk": 0,
+    "def": 30,
+    "effect": "Only 1 monster with the same name can be in the dungeon at a time. If 2 or more are in the dungeon, destroy them until only 1 remains.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "defense",
+        "amount": 4
+      },
+      {
+        "roll": 4,
+        "crest": "spell",
+        "amount": 1
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "krebons",
+    "name": "Krebons",
+    "category": "monster",
+    "level": 2,
+    "monsterType": "Zombie",
+    "hp": 10,
+    "atk": 10,
+    "def": 10,
+    "effect": "Trap ×4 Twice per turn: Negate an attack on this monster.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 3
+      },
+      {
+        "roll": 5,
+        "crest": "attack",
+        "amount": 1
+      },
+      {
+        "roll": 6,
+        "crest": "attack",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "magicians-circle",
+    "name": "Magician's Circle",
+    "category": "item",
+    "level": 2,
+    "itemType": "Spell",
+    "itemSubtype": "Continuous",
+    "effect": "Before your roll: This turn, you can give your Spellcasters Starsurge 1, and if you dimension a Spellcaster, that monster's Dungeon Piece must touch this card's Dungeon Piece.",
+    "keywords": [
+      {
+        "name": "Starsurge",
+        "value": 1
+      }
+    ],
+    "crests": [
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 2
+      },
+      {
+        "roll": 5,
+        "crest": "spell",
+        "amount": 2
+      },
+      {
+        "roll": 6,
+        "crest": "attack",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "marauding-captain",
+    "name": "Marauding Captain",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Warrior",
+    "hp": 20,
+    "atk": 30,
+    "def": 20,
+    "effect": "Swift 2\nEach of your Warriors behind Marauding Captain has Swift 2.",
+    "keywords": [
+      {
+        "name": "Swift",
+        "value": 2
+      }
+    ],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "trap",
+        "amount": 1
+      },
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 2
+      },
+      {
+        "roll": 5,
+        "crest": "defense",
+        "amount": 1
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "prufinesse-the-tactical-trapper",
+    "name": "Prufinesse, the Tactical Trapper",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Zombie",
+    "hp": 40,
+    "atk": 30,
+    "def": 10,
+    "effect": "Trap ×? The range of your traps is extended by ?.\nYou can move your traps with Movement.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "movement",
+        "amount": 5
+      },
+      {
+        "roll": 4,
+        "crest": "trap",
+        "amount": 6
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 7
+      },
+      {
+        "roll": 6,
+        "crest": "movement",
+        "amount": 8
+      }
+    ]
+  },
+  {
+    "id": "super-electromagnetic-voltech-dragon",
+    "name": "Super-Electromagnetic Voltech Dragon",
+    "category": "monster",
+    "level": 4,
+    "monsterType": "Dragon",
+    "hp": 40,
+    "atk": 30,
+    "def": 50,
+    "effect": "Dimension: Your opponent monsters within 5 tiles must move toward, and attack, this monster, doing as much as possible. Nearest monsters move first.\nAdjacent opponent monsters are Immobilized.",
+    "keywords": [
+      {
+        "name": "Immobilized"
+      }
+    ],
+    "crests": [
+      {
+        "roll": 2,
+        "crest": "trap",
+        "amount": 6
+      },
+      {
+        "roll": 3,
+        "crest": "movement",
+        "amount": 3
+      },
+      {
+        "roll": 4,
+        "crest": "defense",
+        "amount": 3
+      },
+      {
+        "roll": 5,
+        "crest": "movement",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "trap",
+        "amount": 7
+      }
+    ]
+  },
+  {
+    "id": "supply",
+    "name": "Supply",
+    "category": "monster",
+    "level": 2,
+    "monsterType": "Warrior",
+    "hp": 20,
+    "atk": 10,
+    "def": 10,
+    "effect": "Dimension: Return 1 Spell and 1 Trap from your GY to your deck.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 4,
+        "crest": "movement",
+        "amount": 6
+      },
+      {
+        "roll": 5,
+        "crest": "movement",
+        "amount": 2
+      },
+      {
+        "roll": 6,
+        "crest": "trap",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "thunder-ball",
+    "name": "Thunder Ball",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Spellcaster",
+    "hp": 30,
+    "atk": 10,
+    "def": 10,
+    "effect": "Spell ×3 Once per turn: Advance in a straight line. If a card stopped this monster, destroy it.",
+    "keywords": [
+      {
+        "name": "Advance"
+      }
+    ],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "defense",
+        "amount": 2
+      },
+      {
+        "roll": 4,
+        "crest": "spell",
+        "amount": 2
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "movement",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "vampire-dragon",
+    "name": "Vampire Dragon",
+    "category": "monster",
+    "level": 3,
+    "monsterType": "Dragon",
+    "hp": 20,
+    "atk": 50,
+    "def": 0,
+    "effect": "When this monster is destroyed: Resurrect a Level 2 or lower Zombie.",
+    "keywords": [
+      {
+        "name": "Resurrect"
+      }
+    ],
+    "crests": [
+      {
+        "roll": 3,
+        "crest": "spell",
+        "amount": 1
+      },
+      {
+        "roll": 4,
+        "crest": "trap",
+        "amount": 1
+      },
+      {
+        "roll": 5,
+        "crest": "attack",
+        "amount": 2
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 7
+      }
+    ]
+  },
+  {
+    "id": "vampire-lady",
+    "name": "Vampire Lady",
+    "category": "monster",
+    "level": 2,
+    "monsterType": "Zombie",
+    "hp": 20,
+    "atk": 10,
+    "def": 20,
+    "effect": "If this monster destroys by battle: Declare monster or item. Your opponent's cards of the declared type have Starsurge -1 during their next roll.",
+    "keywords": [
+      {
+        "name": "Starsurge",
+        "value": -1
+      }
+    ],
+    "crests": [
+      {
+        "roll": 4,
+        "crest": "movement",
+        "amount": 5
+      },
+      {
+        "roll": 5,
+        "crest": "trap",
+        "amount": 4
+      },
+      {
+        "roll": 6,
+        "crest": "spell",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "vorse-raider",
+    "name": "Vorse Raider",
+    "category": "monster",
+    "level": 1,
+    "monsterType": "Warrior",
+    "hp": 10,
+    "atk": 20,
+    "def": 10,
+    "effect": "This monster can attack by paying any 3 crests.\nGains 20 ATK when attacking a Beast.",
+    "keywords": [],
+    "crests": [
+      {
+        "roll": 5,
+        "crest": "attack",
+        "amount": 2
+      },
+      {
+        "roll": 6,
+        "crest": "defense",
+        "amount": 2
+      }
+    ]
+  }
   ]
 }
