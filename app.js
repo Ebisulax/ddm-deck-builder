@@ -1998,8 +1998,8 @@ function renderCardPool() {
         resultCount
     ) {
 
-        resultCount.textContent =
-            `${uniqueCards} cards · ${visibleCards.length} artworks`;
+resultCount.textContent =
+    `${uniqueCards} cards`;
     }
 
 
