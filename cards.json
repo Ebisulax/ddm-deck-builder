@@ -4705,8 +4705,12 @@
       "hp": 10,
       "atk": 10,
       "def": 0,
-      "effect": "",
-      "keywords": [],
+      "effect": "Starbound",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -4739,8 +4743,12 @@
       "hp": 10,
       "atk": 10,
       "def": 0,
-      "effect": "",
-      "keywords": [],
+      "effect": "Starbound",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -5082,8 +5090,12 @@
       "hp": 10,
       "atk": 10,
       "def": 0,
-      "effect": "",
-      "keywords": [],
+      "effect": "Starbound",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -5116,8 +5128,12 @@
       "hp": 10,
       "atk": 10,
       "def": 0,
-      "effect": "",
-      "keywords": [],
+      "effect": "Starbound",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -5865,8 +5881,12 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Dimension: If you control all 5 pieces of Exodia, you win the game.",
-      "keywords": [],
+      "effect": "Starbound\nDimension: If you control all 5 pieces of Exodia, you win the game.",
+      "keywords": [
+        {
+          "name": "Starbound"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
@@ -7378,6 +7398,210 @@
           "roll": 6,
           "crest": "attack",
           "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "tyrant-dragon",
+      "name": "Tyrant Dragon",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Flying\nSpell ×3 Ignore this monster's Flying movement restriction.\nAttack ×2 If this monster attacks: Set the defending monster's DEF to 0.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "spell",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "dark-necrofear",
+      "name": "Dark Necrofear",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 40,
+      "def": 20,
+      "effect": "Trap ×3 If this monster is destroyed: Gain control of 1 opponent monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "spell",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "jinzo",
+      "name": "Jinzo",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Spell ×5 Set your opponent's Trap crest count to 0.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "spell",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "spell-canceller",
+      "name": "Spell Canceller",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Spell ×5 Set your opponent's Spell crest count to 0.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "thousand-eyes-restrict",
+      "name": "Thousand-Eyes Restrict",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 0,
+      "def": 0,
+      "effect": "Flying\nSpell ×5 Tribute this monster: Warp 1 opponent monster to this monster's tile, and gain control of it.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "trap-bandit",
+      "name": "Trap Bandit",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "Set your Trap crest count to 0.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 4
         }
       ]
     }
