@@ -328,7 +328,7 @@ function applyImageCandidates(
 
         const path =
             paths[
-                index
+            index
             ];
 
 
@@ -368,13 +368,13 @@ function standardFrontCandidates(
             card.name
         ),
 
-`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpg`,
+        `${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpg`,
 
-`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpeg`,
+        `${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.jpeg`,
 
-`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.png`,
+        `${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.png`,
 
-`${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.webp`
+        `${CONFIG.FRONT_DIR}${card.name.toLowerCase()}.webp`
 
     ]);
 }
@@ -413,10 +413,10 @@ function alternateCandidates(
     path
 ) {
 
-const filename =
-    filenameOnly(
-        path
-    ).toLowerCase();
+    const filename =
+        filenameOnly(
+            path
+        ).toLowerCase();
 
 
     return unique([
@@ -460,7 +460,7 @@ function normalizeKeyword(
             "",
 
         ...(keyword?.value !==
-        undefined
+            undefined
 
             ? {
 
@@ -642,9 +642,9 @@ function normalizeCard(
 
                     const standard =
                         id ===
-                            "standard" ||
+                        "standard" ||
                         index ===
-                            0;
+                        0;
 
 
                     return {
@@ -713,7 +713,7 @@ function normalizeCard(
 
                         name:
                             raw.altArts.length >
-                            1
+                                1
 
                                 ? `Alternate Art ${index + 1}`
 
@@ -825,7 +825,7 @@ async function loadCards() {
         );
 
     } catch (
-        error
+    error
     ) {
 
         console.error(
@@ -865,8 +865,8 @@ async function loadCards() {
                     <br><br>
 
                     ${escapeHtml(
-                        error.message
-                    )}
+                error.message
+            )}
 
                     <br><br>
 
@@ -985,18 +985,19 @@ function fillSelect(
 
 function populateFilterOptions() {
 
-    const monsterTypes =
+    const types =
         unique(
             cards.map(
                 card =>
-                    card.monsterType
+                    card.category === "monster"
+                        ? card.monsterType
+                        : card.itemType
             )
         )
+            .filter(Boolean)
             .sort(
                 (a, b) =>
-                    a.localeCompare(
-                        b
-                    )
+                    a.localeCompare(b)
             );
 
 
@@ -1035,7 +1036,7 @@ function populateFilterOptions() {
 
     fillSelect(
         $("#monsterTypeFilter"),
-        monsterTypes
+        types
     );
 
 
@@ -1145,10 +1146,10 @@ function createCrestFilters() {
                         >
 
                         ${escapeHtml(
-                            formatCrestName(
-                                crest
-                            )
-                        )}
+                    formatCrestName(
+                        crest
+                    )
+                )}
 
                     </label>
 
@@ -1268,7 +1269,7 @@ function compareNumber(
 
 
     switch (
-        operator
+    operator
     ) {
 
         case "<":
@@ -1537,7 +1538,7 @@ function applyFilters() {
             );
 
 
-    const monsterType =
+    const type =
         normalizeText(
             $("#monsterTypeFilter")
                 ?.value
@@ -1581,6 +1582,8 @@ function applyFilters() {
             card => {
 
 
+                /* SEARCH */
+
                 if (
                     !matchesSearch(
                         card,
@@ -1591,6 +1594,8 @@ function applyFilters() {
                     return false;
                 }
 
+
+                /* EFFECT TEXT */
 
                 if (
                     effectSearch &&
@@ -1605,6 +1610,8 @@ function applyFilters() {
                     return false;
                 }
 
+
+                /* MONSTER / SPELL / TRAP */
 
                 if (
                     categories.length &&
@@ -1621,6 +1628,8 @@ function applyFilters() {
                 }
 
 
+                /* LEVEL */
+
                 if (
                     levels.length &&
                     !levels.includes(
@@ -1632,29 +1641,63 @@ function applyFilters() {
                 }
 
 
-                if (
-                    monsterType &&
-                    normalizeText(
-                        card.monsterType
-                    ) !==
-                    monsterType
-                ) {
+                /* TYPE
+                   Monsters:
+                   Beast / Dragon / Warrior /
+                   Spellcaster / Zombie / etc.
 
-                    return false;
+                   Items:
+                   Spell / Trap
+                */
+
+                if (type) {
+
+                    const cardType =
+                        normalizeText(
+                            card.category ===
+                            "monster"
+
+                                ? card.monsterType
+
+                                : card.itemType
+                        );
+
+
+                    if (
+                        cardType !==
+                        type
+                    ) {
+
+                        return false;
+                    }
                 }
 
 
-                if (
-                    itemSubtype &&
-                    normalizeText(
-                        card.itemSubtype
-                    ) !==
-                    itemSubtype
-                ) {
+                /* ITEM SUBTYPE
+                   e.g.
+                   Continuous
+                   Trap Monster
+                   etc.
+                */
 
-                    return false;
+                if (itemSubtype) {
+
+                    if (
+                        card.category !==
+                            "item" ||
+
+                        normalizeText(
+                            card.itemSubtype
+                        ) !==
+                            itemSubtype
+                    ) {
+
+                        return false;
+                    }
                 }
 
+
+                /* KEYWORD */
 
                 if (
                     keyword &&
@@ -1671,6 +1714,8 @@ function applyFilters() {
                 }
 
 
+                /* HP */
+
                 if (
                     hp &&
                     !compareNumber(
@@ -1683,6 +1728,8 @@ function applyFilters() {
                     return false;
                 }
 
+
+                /* ATK */
 
                 if (
                     atk &&
@@ -1697,6 +1744,8 @@ function applyFilters() {
                 }
 
 
+                /* DEF */
+
                 if (
                     def &&
                     !compareNumber(
@@ -1709,6 +1758,8 @@ function applyFilters() {
                     return false;
                 }
 
+
+                /* CRESTS */
 
                 if (
                     !matchesCrestFilters(
@@ -1725,11 +1776,15 @@ function applyFilters() {
         );
 
 
+    /* SORT */
+
     result =
         sortCards(
             result
         );
 
+
+    /* BUILD ARTWORK RESULTS */
 
     visibleCards =
         [];
@@ -1747,6 +1802,7 @@ function applyFilters() {
                             card,
 
                             artwork
+
                         });
                     }
                 );
@@ -1756,7 +1812,6 @@ function applyFilters() {
 
     renderCardPool();
 }
-
 
 /* =========================================================
    SORT
@@ -1779,7 +1834,7 @@ function sortCards(
 
 
     switch (
-        sort
+    sort
     ) {
 
         case "name-desc":
@@ -1998,8 +2053,8 @@ function renderCardPool() {
         resultCount
     ) {
 
-resultCount.textContent =
-    `${uniqueCards} cards`;
+        resultCount.textContent =
+            `${uniqueCards} cards`;
     }
 
 
@@ -2032,9 +2087,9 @@ resultCount.textContent =
 
             const disabled =
                 deck.length >=
-                    CONFIG.DECK_SIZE ||
+                CONFIG.DECK_SIZE ||
                 copies >=
-                    CONFIG.COPY_LIMIT;
+                CONFIG.COPY_LIMIT;
 
 
             const element =
@@ -2078,18 +2133,17 @@ resultCount.textContent =
                     </div>
 
 
-                    ${
-                        artwork.id !==
-                        "standard"
+                    ${artwork.id !==
+                    "standard"
 
-                            ? `
+                    ? `
                                 <div class="artwork-name">
                                     ${escapeHtml(artwork.name)}
                                 </div>
                               `
 
-                            : ""
-                    }
+                    : ""
+                }
 
 
                     <div class="card-meta">
@@ -2097,10 +2151,10 @@ resultCount.textContent =
                         L${card.level}
                         ·
                         ${escapeHtml(
-                            displayCategory(
-                                card
-                            )
-                        )}
+                    displayCategory(
+                        card
+                    )
+                )}
 
                     </div>
 
@@ -2238,9 +2292,9 @@ function removeFromDeck(
 
     if (
         index <
-            0 ||
+        0 ||
         index >=
-            deck.length
+        deck.length
     ) {
 
         return;
@@ -2304,7 +2358,7 @@ function renderDeck() {
 
         const entry =
             deck[
-                index
+            index
             ];
 
 
@@ -2472,7 +2526,7 @@ function updateDeckStats() {
 
             if (
                 levels[
-                    card.level
+                card.level
                 ] !==
                 undefined
             ) {
@@ -2491,7 +2545,7 @@ function updateDeckStats() {
 
             if (
                 types[
-                    type
+                type
                 ] !==
                 undefined
             ) {
@@ -2667,12 +2721,12 @@ function renderPreview() {
         addButton.disabled =
 
             deck.length >=
-                CONFIG.DECK_SIZE ||
+            CONFIG.DECK_SIZE ||
 
             copyCount(
                 card.id
             ) >=
-                CONFIG.COPY_LIMIT;
+            CONFIG.COPY_LIMIT;
     }
 
 
@@ -2716,16 +2770,16 @@ function getPreviewIndex() {
             String(
                 result.card.id
             ) ===
-                String(
-                    previewState.cardId
-                ) &&
+            String(
+                previewState.cardId
+            ) &&
 
             String(
                 result.artwork.id
             ) ===
-                String(
-                    previewState.artworkId
-                )
+            String(
+                previewState.artworkId
+            )
     );
 }
 
@@ -2768,7 +2822,7 @@ function movePreview(
 
     const result =
         visibleCards[
-            index
+        index
         ];
 
 
@@ -2826,7 +2880,7 @@ function saveDeck() {
         );
 
     } catch (
-        error
+    error
     ) {
 
         console.warn(
@@ -2992,7 +3046,7 @@ function resetFilters() {
         .forEach(
             input =>
                 input.checked =
-                    false
+                false
         );
 
 
@@ -3002,7 +3056,7 @@ function resetFilters() {
         .forEach(
             input =>
                 input.checked =
-                    false
+                false
         );
 
 
@@ -3100,7 +3154,7 @@ function resetFilters() {
         .forEach(
             checkbox =>
                 checkbox.checked =
-                    false
+                false
         );
 
 
@@ -3110,7 +3164,7 @@ function resetFilters() {
         .forEach(
             input =>
                 input.value =
-                    "1"
+                "1"
         );
 
 
@@ -3198,7 +3252,7 @@ document.addEventListener(
 
 
         switch (
-            target.dataset.action
+        target.dataset.action
         ) {
 
             case "add":

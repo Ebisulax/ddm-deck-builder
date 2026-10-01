@@ -6304,7 +6304,7 @@
       "category": "item",
       "level": 4,
       "itemType": "Trap",
-      "effect": "Req: Your DM has 1 life.\nSend all cards to the GYs, except 1 of your monsters. Your opponent Dimensions 1 monster from their dice pool or GY. Players cannot Dimension cards, and DMs cannot take damage. Play until only 1 monster remains in the dungeon. Its owner wins. If none remain, you lose.",
+      "effect": "Req: Your monster is trapped. Your DM has 1 life.\nSend all cards in the dungeon to the GYs, except the trapped monster. Your opponent Dimensions from their dice pool, OR Resurrects from their GY, one monster. Players cannot place any other cards in the dungeon. DMs cannot lose their last life. Play until only 1 monster remains in the dungeon. Its controller wins. If none remain: You lose.",
       "keywords": [],
       "crests": [
         {
