@@ -161,7 +161,7 @@
       "hp": 20,
       "atk": 30,
       "def": 30,
-      "effect": "Tunneler\nWhen another of your monster is attacked, by paying the appropriate number of Attack, this monster can move to that monster's position, and become the new attacking target (the other monster moves to an adjacent space)",
+      "effect": "Tunneler\nWhen your monster is attacked: You can move this monster with Swift 3 to an adjacent square to the attacking monster, and it becomes the new attack target)",
       "keywords": [
         {
           "name": "Tunneler"
@@ -611,7 +611,7 @@
       "hp": 20,
       "atk": 30,
       "def": 30,
-      "effect": "Dimension: Choose a direction, and destroy the nearest monster in that direction and in line.",
+      "effect": "Dimension: Destroy a monster in line that is nearest in a chosen direction.",
       "keywords": [],
       "crests": [
         {
@@ -981,10 +981,13 @@
       "hp": 40,
       "atk": 30,
       "def": 30,
-      "effect": "Flying",
+      "effect": "Flying\nIf you control a \"Cocoon of Evolution\" that gained 30 ATK by its own effect: This monster gains Beacon, but destroy it after the Dimension, and if you do, this monster gains 20 ATK.",
       "keywords": [
         {
           "name": "Flying"
+        },
+        {
+          "name": "Beacon"
         }
       ],
       "crests": [
@@ -1835,7 +1838,7 @@
       "hp": 10,
       "atk": 20,
       "def": 20,
-      "effect": "Dimension: Choose 1 monster within 3 squares, and warp it on an adjacent space next to it's DM.",
+      "effect": "Dimension: Target 1 monster: Warp it on an adjacent space next to it's DM.",
       "keywords": [],
       "crests": [
         {
@@ -3230,10 +3233,10 @@
       "category": "monster",
       "level": 4,
       "monsterType": "Dragon",
-      "hp": 60,
-      "atk": 60,
-      "def": 60,
-      "effect": "Flying\nCan only be dimensioned if you have at least 5 Dragons in your GY.\nDimension: Destroy 1 of your opponent's monsters.",
+      "hp": 50,
+      "atk": 50,
+      "def": 50,
+      "effect": "Flying\nCan only be dimensioned if you have at least 5 Dragons in your GY.\nDimension: You can destroy a card",
       "keywords": [
         {
           "name": "Flying"
