@@ -7607,6 +7607,2075 @@
           "amount": 4
         }
       ]
+    },
+    {
+      "id": 237,
+      "name": "Arkana's Dark Magician",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 30,
+      "def": 20,
+      "effect": "This monster can attack by spending any 1 crest.\nTrap ×5 All of your monsters that have already attacked can attack again.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "spell",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "name": "Three-Legged Zombies",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 60,
+      "def": 10,
+      "effect": "Sluggish 3",
+      "keywords": [
+        {
+          "name": "Sluggish",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "name": "Decayed Commander",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 40,
+      "atk": 30,
+      "def": 20,
+      "effect": "An opponent monster that battles a Zombie gets Infected 2.",
+      "keywords": [
+        {
+          "name": "Infected",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "name": "Mad Sword Beast",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Tunneler\nTrap ×3 If this monster tunnels through another monster: You can deal 10 damage to it.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 241,
+      "name": "Petit Moth",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "name": "Cocoon of Evolution",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 0,
+      "def": 30,
+      "effect": "Immobilized\nIf you control \"Petit Moth\": This monster gains Beacon, but destroy it after the Dimension, and gain this effect:\nSpell ×2 Once per turn: This monster gains 10 ATK.",
+      "keywords": [
+        {
+          "name": "Immobilized"
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "Larvae Moth",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "If you control a \"Cocoon of Evolution\" that gained 20 ATK by its own effect: This monster gains Beacon, but destroy it after the Dimension, and if you do, this monster gains 20 ATK.",
+      "keywords": [
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "name": "Perfectly Ultimate Great Moth",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Beast",
+      "hp": 50,
+      "atk": 40,
+      "def": 40,
+      "effect": "Flying\nIf you control a \"Cocoon of Evolution\" that gained 40 ATK by its own effect: This monster gains Beacon, but destroy it after the Dimension, and if you do, this monster gains 20 ATK.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "name": "Swordstalker",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "When your monster(s) get destroyed: This monster gains 10 ATK for each.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "name": "Shadow Ghoul",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 10,
+      "def": 10,
+      "effect": "Tunneler\nWhen your monster(s) get destroyed: This monster gains 10 ATK for each.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "name": "Yamadron",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Dragon",
+      "hp": 10,
+      "atk": 10,
+      "def": 20,
+      "effect": "If you control no other Dragons, this monster gains 20 HP and 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "name": "Dungeon Worm",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 0,
+      "effect": "Tunneler\nCan only be attacked by other Tunnelers.\nThis monster can move through empty dungeon spaces, as long as it stops on a dungeon tile.\nSpell ×2 If you tunnel through a monster: Deal 10 damage to it.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 7
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "name": "Mushroom Man #2",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Your other monsters lose 10 ATK.\nSpell ×5 During the End of your turn: Give control of this monster to your opponent.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "name": "Toon World",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Monsters that mention \"Toon World\" gain Starsurge 1, and also gain Swift 2 if within 5 squares.",
+      "keywords": [
+        {
+          "name": "Starsurge",
+          "value": 1
+        },
+        {
+          "name": "Swift",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "name": "Blue-Eyes Toon Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 40,
+      "atk": 30,
+      "def": 30,
+      "effect": "Toon, Flying, Range 3",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Range",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 8
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "name": "Red-Eyes Toon Dragon",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 30,
+      "def": 30,
+      "effect": "Toon, Flying\nSpell ×6 Dimension, while \"Toon World\" is in the Dungeon: Resurrect a Level 3 or lower Toon monster.",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Resurrect"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "name": "Toon Cannon Soldier",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 20,
+      "def": 10,
+      "effect": "Toon\nSpell ×4 Once per turn, while \"Toon World\" is in the Dungeon: Tribute a monster; destroy a monster in line that is nearest in any chosen direction.",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "name": "Manga Ryu-Ran",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Dragon",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Toon\nWhile \"Toon World\" is in the Dungeon, your opponent monsters cannot defend themselves from Toon monster attacks.",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "name": "Toon Summoned Skull",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Toon, Reach",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Reach"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "name": "Toon Mermaid",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "Toon, Range 2",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Range",
+          "value": 2
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "name": "Toon Gemini Elf",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 30,
+      "def": 10,
+      "effect": "Toon\nIf this monster destroys a monster by battle: Destroy a number of crests in your opponent's crest pool, up to the level of the destroyed monster.",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "name": "Toon Alligator",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "Toon, Tunneler",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "name": "Dark Rabbit",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Toon",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "name": "Toon Masked Sorcerer",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Toon\nIf this monster destroys a monster by battle: Add a number of crests to your crest pool, up to the level of the destroyed monster.",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 261,
+      "name": "Funny Dark Rabbit",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 20,
+      "def": 30,
+      "effect": "Toon, Tunneler\nSpell ×5 Dimension: During your next roll, one Item that mentions \"Toon\" gains Constellation with Toon monsters.",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Tunneler"
+        },
+        {
+          "name": "Constellation",
+          "value": "Toon monsters"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 262,
+      "name": "Toon Mask",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "The trapped monster can only target Toon monsters for attacks or with effects.",
+      "keywords": [
+        {
+          "name": "Toon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "name": "Toon Defense",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Your Toon monsters, and items that mention \"Toon\", are Indestructible by effects.",
+      "keywords": [
+        {
+          "name": "Toon"
+        },
+        {
+          "name": "Indestructible"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "name": "Amazoness Chain Master",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 20,
+      "def": 20,
+      "effect": "Trap ×7 If this monster is destroyed by battle: Look through your opponent's dice pool, and add 1 card to your dice pool.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 265,
+      "name": "Amazoness Paladin",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "This card gains 10 ATK for every \"Amazoness\" monster in the dungeon.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 266,
+      "name": "Amazoness Tiger",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Your Warrior monsters gain 10 ATK.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "name": "Amazoness Baby Tiger",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Trap ×5 If this monster is attacked: You can warp another \"Amazoness\" monster to an adjacent space of the attacking monster, and it becomes the new attacking target.\nYour \"Amazoness\" monsters within 2 squares gain 20 ATK/DEF.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "name": "Amazoness Swords Woman",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 40,
+      "def": 20,
+      "effect": "Trap ×4 After this monster was attacked: Immediately attack the attacking monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 269,
+      "name": "Amazoness Archers",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "itemSubtype": "DM Trap",
+      "effect": "During this turn, all of your \"Amazoness\" Warrior monsters gain 20 ATK, Reach, Range ∞, and each one attacks a monster in line, one after another.",
+      "keywords": [
+        {
+          "name": "Reach"
+        },
+        {
+          "name": "Range",
+          "value": "∞"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 8
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": 270,
+      "name": "Dice Armadillo",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Beast",
+      "hp": 30,
+      "atk": 10,
+      "def": 30,
+      "effect": "Spell ×4 After you couldn't successfully Dimension a card during your normal roll: This monster takes 20 damage, and roll again.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 271,
+      "name": "Revival Jam",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "Trap ×4 If this monster is destroyed: Resurrect it.",
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "name": "Jam Defender",
+      "category": "item",
+      "level": 2,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "Trap ×2 If one of your monsters is attacked: Warp a \"Revival Jam\" to an adjacent tile of the attacking monster, and it becomes the new attacking target.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "name": "Beautiful Headhuntress",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 10,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "name": "Warrior of Tradition",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 20,
+      "def": 20,
+      "effect": "If \"Beautiful Headhuntress\" is in the dungeon: This card gains Beacon.\nIf \"Sonic Maid\" is in the dungeon: Your Warriors gain 20 ATK.",
+      "keywords": [
+        {
+          "name": "Beacon"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "name": "Sonic Maid",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "effect": "",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": 276,
+      "name": "Goblin of Greed",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 10,
+      "def": 20,
+      "effect": "Neither player can add crests to the crest pools, except by their normal rolls.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "name": "Ring of Destruction",
+      "category": "item",
+      "level": 4,
+      "itemType": "Trap",
+      "effect": "Destroy the trapped monster. Both DMs lose 1 life, but cannot lose their last life this way.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "defense",
+          "amount": 5
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 7
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "name": "Solomon's Lawbook",
+      "category": "item",
+      "level": 2,
+      "itemType": "Trap",
+      "effect": "You skip your next Normal Roll.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "name": "Dragon Statue",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Beast",
+      "hp": 20,
+      "atk": 10,
+      "def": 30,
+      "effect": "Immovable\nSpell ×2 Once per turn, use one of these effects:\n• Warp this monster to an empty dungeon tile within 4 squares. It becomes an Obstacle, and is no longer a monster.\n• Warp this Obstacle to a tile within 4 squares. It reverts to being a monster.",
+      "keywords": [
+        {
+          "name": "Immovable"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 280,
+      "name": "Numinous Healer",
+      "category": "item",
+      "level": 4,
+      "itemType": "Trap",
+      "effect": "Heal all damage from all your monsters, and your DM heals 1 life.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 281,
+      "name": "Change of Heart",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "The trapped monster changes control to the opponent.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 282,
+      "name": "Shinato, King of a Higher Plane",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 40,
+      "atk": 50,
+      "def": 40,
+      "effect": "Syzygy, Flying\nSpell ×9 If this monster destroys an opponent monster by battle: Your opponent's DM loses 1 life.",
+      "keywords": [
+        {
+          "name": "Syzygy"
+        },
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 283,
+      "name": "Dark Deal",
+      "category": "item",
+      "level": 3,
+      "itemType": "Spell",
+      "itemSubtype": "Continuous",
+      "effect": "After each of your Normal Rolls, put 1 dark counter on this card, and roll again. If this card leaves the dungeon: Skip your next Normal Rolls times the number of counters this card had.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "defense",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 284,
+      "name": "Chain Thrasher",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Warrior",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "Reach\nThis monster can attack one additional time each turn for every \"Chain Thrasher\" in your GY.",
+      "keywords": [
+        {
+          "name": "Reach"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "name": "Grass Phantom",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Beast",
+      "hp": 10,
+      "atk": 20,
+      "def": 10,
+      "effect": "This monster gains 10 ATK for each \"Grass Phantom\" in your GY.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "defense",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "Malice Ascendant",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 10,
+      "atk": 10,
+      "def": 20,
+      "effect": "Any monster that battles this monster gains Infected 1. Increase the level of Infected by 1 for each \"Malice Ascendant\" in your GY.",
+      "keywords": [
+        {
+          "name": "Infected",
+          "value": 1
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "Spell Strider",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Warrior",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Spell ×3 Warp this monster to the tile of an activated Continuous Item.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 3
+        },
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "Power Pickaxe",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "The trapped monster gains Tunneler.",
+      "keywords": [
+        {
+          "name": "Tunneler"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "Wing Requital",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "The trapped monster gains Flying.",
+      "keywords": [
+        {
+          "name": "Flying"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "Nutrient Z",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "itemSubtype": "DM Trap",
+      "effect": "Req: Your DM has 1 life, and has already lost 1 or more life this turn. Heal all life of your DM, and End the opponent's turn.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 3
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 291,
+      "name": "Mask of Darkness",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Zombie",
+      "hp": 30,
+      "atk": 30,
+      "def": 20,
+      "effect": "Trap ×? Set 1 Trap from your GY on a free tile within 3 squares of this monster. (? = Trap's Level × 3)",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 1
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 292,
+      "name": "Time Wizard",
+      "category": "monster",
+      "level": 1,
+      "monsterType": "Spellcaster",
+      "hp": 10,
+      "atk": 0,
+      "def": 10,
+      "effect": "Dimension: Destroy another monster with the lowest ATK (your choice if tied).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "attack",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 293,
+      "name": "Exploding Disc",
+      "category": "item",
+      "level": 3,
+      "itemType": "Trap",
+      "effect": "Deal 20 damage to the trapped monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "name": "The Forgiving Maiden",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 10,
+      "def": 30,
+      "effect": "Your monsters do not take any excess damage when attacking an opponent monster.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "trap",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": 295,
+      "name": "Giant Soldier of Stone",
+      "category": "monster",
+      "level": 2,
+      "monsterType": "Warrior",
+      "hp": 20,
+      "atk": 10,
+      "def": 30,
+      "effect": "Spell ×2 Once per turn: Destroy an Obstacle.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 4,
+          "crest": "spell",
+          "amount": 2
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": 296,
+      "name": "Helpoemer",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Zombie",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Trap ×3 At the End of each of your turns, if this monster is in the GY because it was destroyed by battle: Destroy 2 crests from your opponent's crest pool.",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "trap",
+          "amount": 2
+        },
+        {
+          "roll": 4,
+          "crest": "trap",
+          "amount": 1
+        },
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 3
+        },
+        {
+          "roll": 6,
+          "crest": "spell",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 297,
+      "name": "Rush Recklessly",
+      "category": "item",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "The trapped monster gains Swift 3 until End of Turn.",
+      "keywords": [
+        {
+          "name": "Swift",
+          "value": 3
+        }
+      ],
+      "crests": [
+        {
+          "roll": 5,
+          "crest": "trap",
+          "amount": 4
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 298,
+      "name": "Overdrive Teleporter",
+      "category": "monster",
+      "level": 4,
+      "monsterType": "Spellcaster",
+      "hp": 30,
+      "atk": 40,
+      "def": 30,
+      "effect": "Your monsters can Warp instead of moving (you still need to pay the appropriate amount of Movement).",
+      "keywords": [],
+      "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 5
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 5
+        },
+        {
+          "roll": 6,
+          "crest": "movement",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": 299,
+      "name": "Gravity Controller",
+      "category": "monster",
+      "level": 3,
+      "monsterType": "Spellcaster",
+      "hp": 20,
+      "atk": 30,
+      "def": 30,
+      "effect": "Trap ×3 Monsters within 5 squares lose Flying, Tunneling, Swift, and Sluggish, until End of Turn.",
+      "keywords": [
+        {
+          "name": "Flying"
+        },
+        {
+          "name": "Tunneler"
+        },
+        {
+          "name": "Swift"
+        },
+        {
+          "name": "Sluggish"
+        }
+      ],
+      "crests": [
+        {
+          "roll": 3,
+          "crest": "movement",
+          "amount": 1
+        },
+        {
+          "roll": 4,
+          "crest": "movement",
+          "amount": 6
+        },
+        {
+          "roll": 5,
+          "crest": "spell",
+          "amount": 6
+        },
+        {
+          "roll": 6,
+          "crest": "attack",
+          "amount": 4
+        }
+      ]
     }
   ]
 }
