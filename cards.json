@@ -49,7 +49,11 @@
       "atk": 20,
       "def": 10,
       "effect": "spell x3 Activate at the start of your turn. Resurrect this monster. Can only be used if all your monsters on the board are Warrior-type.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 4,
@@ -2787,7 +2791,7 @@
       "effect": "During your next roll, if you roll 2 or more summon crests of the same level, you can dimension up to 2 of them.",
       "keywords": [],
       "crests": [
-           {
+        {
           "roll": 5,
           "crest": "trap",
           "amount": 4
@@ -2897,7 +2901,11 @@
       "atk": 10,
       "def": 10,
       "effect": "If this monster destroys a monster by battle, you can resurrect it to the same space it got destroyed in.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 5,
@@ -2945,7 +2953,11 @@
       "level": 3,
       "itemType": "Spell",
       "effect": "Resurrect three Level 1 monsters.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -4416,7 +4428,11 @@
       "atk": 10,
       "def": 20,
       "effect": "Twice per duel: If this monster is destroyed, during your next roll, you can resurrect it to a space adjacent to your DM.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 5,
@@ -4503,7 +4519,11 @@
       "atk": 30,
       "def": 20,
       "effect": "At the start of your turn, if this monster was destroyed by a card effect last turn, resurrect this monster to the same tile (or an adjacent, if occupied).",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -4689,7 +4709,11 @@
       "atk": 40,
       "def": 40,
       "effect": "Trap x5 If this monster destroys a monster by battle, resurrect it to the same tile under your control as a Zombie.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
@@ -4790,6 +4814,9 @@
         {
           "name": "Infected",
           "value": 3
+        },
+        {
+          "name": "Resurrect"
         }
       ],
       "crests": [
@@ -4844,7 +4871,11 @@
       "atk": 30,
       "def": 10,
       "effect": "Trap x4 Once per duel: Use this only when this monster is in your GY. Resurrect one Zombie.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 4,
@@ -5155,6 +5186,9 @@
         {
           "name": "Infected",
           "value": 1
+        },
+        {
+          "name": "Resurrect"
         }
       ],
       "crests": [
@@ -5180,7 +5214,11 @@
       "atk": 40,
       "def": 50,
       "effect": "Effects to resurrect this monster cost 2 crests less to use.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
@@ -5419,7 +5457,11 @@
       "atk": 40,
       "def": 30,
       "effect": "Trap x5 If one of your Beasts is destroyed: Resurrect this monster to the same space.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
@@ -5588,8 +5630,12 @@
       "category": "item",
       "level": 2,
       "itemType": "Spell",
-      "effect": "Spell\nResurrect one of your monsters to this item's space.",
-      "keywords": [],
+      "effect": "Resurrect one of your monsters to this item's space.",
+      "keywords": [
+        {
+          "name": "Resurrect"
+        }
+      ],
       "crests": [
         {
           "roll": 4,
@@ -6065,10 +6111,10 @@
       "level": 2,
       "itemType": "Spell",
       "itemSubtype": "Continuous",
-      "effect": "If a non-Zombie monster is within 3 squares: It gets Sluggish 2, and also take 10 damage at the end of turn as long as it is Sluggish.",
+      "effect": "If a Monster without Infected is within 3 squares: It gets Infected 2.\nAt the end of turn: Monsters within 3 squares get Infected 2, also deal 10 damage to all Monsters in the dungeon that became Infected by this card's effect.",
       "keywords": [
         {
-          "name": "Sluggish",
+          "name": "Infected",
           "value": 2
         }
       ],
@@ -7225,6 +7271,9 @@
         },
         {
           "name": "Beacon"
+        },
+        {
+          "name": "Resurrect"
         }
       ],
       "crests": [
