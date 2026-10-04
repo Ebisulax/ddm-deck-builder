@@ -1933,6 +1933,27 @@ function sortCards(
 
             break;
 
+            
+        case "id-desc":
+
+            result.sort(
+                (a, b) =>
+                    Number(b.id) -
+                    Number(a.id)
+            );
+
+            break;
+
+
+        case "id-asc":
+
+            result.sort(
+                (a, b) =>
+                    Number(a.id) -
+                    Number(b.id)
+            );
+
+            break;
 
         default:
 

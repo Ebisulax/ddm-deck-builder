@@ -48,12 +48,12 @@
       "hp": 20,
       "atk": 20,
       "def": 10,
-      "effect": "Magic x3 Activate at the start of your turn. Resurrect this monster. Can only be used if all your monsters on the board are Warrior-type.",
+      "effect": "spell x3 Activate at the start of your turn. Resurrect this monster. Can only be used if all your monsters on the board are Warrior-type.",
       "keywords": [],
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -77,7 +77,7 @@
       "hp": 20,
       "atk": 20,
       "def": 20,
-      "effect": "Magic x3 Reveal one item on the field.",
+      "effect": "spell x3 Reveal one item on the field.",
       "keywords": [],
       "crests": [
         {
@@ -106,7 +106,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Dimension: You can warp 1 \"Genie\"-monster you control to an adjacent tile.",
+      "effect": "Dimension, or after this monster moves: You can warp 1 \"Genie\"-monster you control to an adjacent tile.",
       "keywords": [],
       "crests": [
         {
@@ -116,7 +116,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -127,7 +127,7 @@
       "category": "item",
       "level": 3,
       "itemType": "Trap",
-      "effect": "Trap\nActivate this if you rolled 3 Summon Crests of the same level. Summon up to 3 of them.",
+      "effect": "During your next roll, if you rolled 3 summon crests of cards with the same level: You can dimension all 3 of them.",
       "keywords": [],
       "crests": [
         {
@@ -206,7 +206,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -233,7 +233,7 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -262,7 +262,7 @@
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -277,7 +277,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -301,7 +301,7 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -340,7 +340,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         }
       ],
@@ -367,22 +367,22 @@
       "crests": [
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         }
       ]
@@ -425,7 +425,7 @@
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -435,7 +435,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -549,7 +549,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -611,7 +611,7 @@
       "hp": 20,
       "atk": 30,
       "def": 30,
-      "effect": "Dimension: Destroy a monster in line that is nearest in a chosen direction.",
+      "effect": "Dimension: Destroy a monster in line that is nearest in any chosen direction.",
       "keywords": [],
       "crests": [
         {
@@ -689,7 +689,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -722,7 +722,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -1071,7 +1071,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         }
       ]
@@ -1172,12 +1172,12 @@
       "hp": 40,
       "atk": 40,
       "def": 30,
-      "effect": "All your other Beasts gain 20 ATK.\nIf a Beast attacks, it gains the ATK of all adjacent Beasts you control.",
+      "effect": "Your other Beasts gain 20 ATK.\nWhen a Beast attacks: It gains the ATK of all your Beasts within 2 squares.",
       "keywords": [],
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -1197,7 +1197,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -1211,8 +1211,12 @@
       "hp": 30,
       "atk": 40,
       "def": 20,
-      "effect": "Dimension: If you rolled three Level 4 Summon Crests this turn, destroy all of your opponent's monsters.",
-      "keywords": [],
+      "effect": "You can give this monster Beacon, but it has 10 ATK/DEF after you dimensioned it.",
+      "keywords": [
+        {
+          "name": "Beacon"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
@@ -1231,7 +1235,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -1270,7 +1274,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 10
         },
         {
@@ -1287,7 +1291,7 @@
       "level": 4,
       "monsterType": "Warrior",
       "hp": 40,
-      "atk": 40,
+      "atk": 50,
       "def": 30,
       "effect": "If this monster destroys another monster by battle, it can make a second attack this turn.",
       "keywords": [],
@@ -1405,7 +1409,7 @@
       "hp": 30,
       "atk": 20,
       "def": 20,
-      "effect": "Magic x2 Increase this monster's ATK by 10.",
+      "effect": "spell x2 Increase this monster's ATK by 10.",
       "keywords": [],
       "crests": [
         {
@@ -1449,7 +1453,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -1523,7 +1527,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -1579,7 +1583,7 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -1650,7 +1654,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         }
       ]
@@ -1664,7 +1668,7 @@
       "hp": 30,
       "atk": 10,
       "def": 10,
-      "effect": "Dimension: Add 1 Magic to your crest pool.\nYour Spellcaster's effects cost 1 Magic less to activate.",
+      "effect": "Dimension: Add 1 spell to your crest pool.\nYour Spellcaster's effects cost 2 spell less to activate.",
       "keywords": [],
       "crests": [
         {
@@ -1674,7 +1678,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -1698,7 +1702,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -1756,7 +1760,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -1775,22 +1779,22 @@
       "hp": 20,
       "atk": 20,
       "def": 20,
-      "effect": "Magic x3 Increase the ATK of one of your monsters by 10.\nMagic x3 Decrease the DEF of one of your opponent's monsters by 10.",
+      "effect": "spell x3 Increase the ATK of one of your monsters by 10.\nspell x3 Decrease the DEF of one of your opponent's monsters by 10.",
       "keywords": [],
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -1843,7 +1847,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -1862,7 +1866,7 @@
       "hp": 20,
       "atk": 20,
       "def": 20,
-      "effect": "Double the amount of Magic you roll.\nMagic x3 Gain 1 Attack.",
+      "effect": "Double the amount of spell you roll.\nspell x3 Gain 1 Attack.",
       "keywords": [],
       "crests": [
         {
@@ -1877,7 +1881,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -1901,7 +1905,7 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -1949,7 +1953,7 @@
       "hp": 30,
       "atk": 30,
       "def": 20,
-      "effect": "If your opponent dimensioned a Level 3 or higher card in his last turn, this monster has starsurge 2.",
+      "effect": "If  your opponent dimensions a Level 3 or higher card, this monster gains Starsurge 2 until you dimension a card.",
       "keywords": [
         {
           "name": "Starsurge",
@@ -2000,7 +2004,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -2111,7 +2115,7 @@
       "category": "item",
       "level": 3,
       "itemType": "Trap",
-      "effect": "Can only be activated when the trapped monster is a Level 4. Destroy all of your opponent's Level 1 - 3 monsters.",
+      "effect": "Req: Trapped monster is Level 4\nDestroy all of your opponent's Level 3 or lower monsters.",
       "keywords": [],
       "crests": [
         {
@@ -2126,12 +2130,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -2150,7 +2154,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -2186,14 +2190,14 @@
     },
     {
       "id": 70,
-      "name": "Breaker the Magical Warrior",
+      "name": "Breaker the magical Warrior",
       "category": "monster",
       "level": 2,
       "monsterType": "Spellcaster",
       "hp": 20,
       "atk": 20,
       "def": 10,
-      "effect": "Magic x5 Once per turn: Destroy one Item on the field.",
+      "effect": "spell x5 Once per turn: Destroy one Item on the field.",
       "keywords": [],
       "crests": [
         {
@@ -2222,7 +2226,7 @@
       "hp": 10,
       "atk": 20,
       "def": 20,
-      "effect": "×4 (Quick): Negate the effect of an Item. Then, if it's a Trap, set it back face-down (the trapped monster advances 1 tile). If it's a Spell, put it back into your opponent's crest pool, and give it starsurge 1.",
+      "effect": "x4 (Quick): Negate the effect of an Item. Then, if it's a Trap, set it back face-down (the trapped monster advances 1 tile). If it's a Spell, put it back into your opponent's crest pool, and give it starsurge 1.",
       "keywords": [
         {
           "name": "Quick"
@@ -2252,19 +2256,19 @@
     },
     {
       "id": 72,
-      "name": "Dark Magician",
+      "name": "Dark magician",
       "category": "monster",
       "level": 4,
       "monsterType": "Spellcaster",
       "hp": 30,
       "atk": 40,
       "def": 20,
-      "effect": "Magic x2 Once per turn: Swap places with an adjacent monster, then destroy that monster.\nTrap x2 If this monster is attacked, or chosen by an effect: Your opponent rolls a die. If the result is 1-4, negate the attack/effect.",
+      "effect": "spell x2 Once per turn: Swap places with an adjacent monster, then destroy that monster.\nTrap x2 If this monster is attacked, or chosen by an effect: Your opponent rolls a die. If the result is 1-4, negate the attack/effect.",
       "keywords": [],
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -2298,7 +2302,7 @@
       "hp": 30,
       "atk": 30,
       "def": 30,
-      "effect": "Dimension: Set your Magic count in your crest pool to 20.",
+      "effect": "Dimension: Set your spell count in your crest pool to 20.",
       "keywords": [],
       "crests": [
         {
@@ -2313,7 +2317,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -2337,10 +2341,16 @@
       "hp": 20,
       "atk": 20,
       "def": 20,
-      "effect": "Flying\nDimension: Destroy all monsters that were dimensioned from the GY. Any monster that is sent to the GY gets sealed.",
+      "effect": "Flying\nDimension: Destroy all opponent's resurrected monsters.\nAny opponent monster that is sent to the GY gets sealed.",
       "keywords": [
         {
           "name": "Flying"
+        },
+        {
+          "name": "Resurrect"
+        },
+        {
+          "name": "Sealed"
         }
       ],
       "crests": [
@@ -2351,12 +2361,12 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         },
         {
@@ -2368,14 +2378,14 @@
     },
     {
       "id": 75,
-      "name": "Chaos Command Magician",
+      "name": "Chaos Command magician",
       "category": "monster",
       "level": 3,
       "monsterType": "Spellcaster",
       "hp": 30,
       "atk": 30,
       "def": 20,
-      "effect": "Magic x3 Negate the effect of a card that chooses this monster.",
+      "effect": "spell x3 Negate the effect of a card that chooses this monster.",
       "keywords": [],
       "crests": [
         {
@@ -2446,7 +2456,7 @@
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -2548,7 +2558,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Trap ×? Once per game: Destroy 1 monster within 3 spaces. (? = monster's level × 3)",
+      "effect": "Trap x? Once per game: Destroy 1 monster within 3 spaces. (? = monster's level x 3)",
       "keywords": [],
       "crests": [
         {
@@ -2668,7 +2678,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Magic x? Once per turn: Cast a spell from your GY (? = spell's Level x 3).",
+      "effect": "spell x? Once per turn: Cast a spell from your GY (? = spell's Level x 3).",
       "keywords": [],
       "crests": [
         {
@@ -2678,7 +2688,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         }
       ],
@@ -2693,12 +2703,8 @@
       "level": 3,
       "itemType": "Trap",
       "itemSubtype": "Trap Monster",
-      "effect": "Trap Monster (10/0/10)\nQuiescent\nAttack the trapped monster. This monster's ATK becomes the opponent's monster's ATK. Set it back face-down after the battle.",
-      "keywords": [
-        {
-          "name": "Quiescent"
-        }
-      ],
+      "effect": "Trap Monster (10/0/10)\nAttack the trapped monster. This monster's ATK becomes the opponent's monster's ATK. Set it back face-down after the battle.",
+      "keywords": [],
       "crests": [
         {
           "roll": 3,
@@ -2707,7 +2713,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -2776,17 +2782,12 @@
       "id": 88,
       "name": "Double Summon",
       "category": "item",
-      "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nDuring your next roll, if you roll 2 or more summon crests, you can dimension up to 2 of them.",
+      "level": 1,
+      "itemType": "Trap",
+      "effect": "During your next roll, if you roll 2 or more summon crests of the same level, you can dimension up to 2 of them.",
       "keywords": [],
       "crests": [
-        {
-          "roll": 4,
-          "crest": "trap",
-          "amount": 6
-        },
-        {
+           {
           "roll": 5,
           "crest": "trap",
           "amount": 4
@@ -2819,12 +2820,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -2876,7 +2877,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -2917,7 +2918,7 @@
       "level": 2,
       "itemType": "Spell",
       "itemSubtype": "Continuous",
-      "effect": "Continuous Spell\nNeither player can use the same shape of tile that this card was dimensioned on.",
+      "effect": "Neither player can place Dungeon Pieces of the same shape as this card's Dungeon Piece.",
       "keywords": [],
       "crests": [
         {
@@ -2963,7 +2964,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         }
       ]
@@ -2973,8 +2974,8 @@
       "name": "Magical Blast",
       "category": "item",
       "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nChoose one of your monsters. This turn, it can attack a monster that is horizontally or vertically to it.",
+      "itemType": "Trap",
+      "effect": "The trapped monster can attack a monster in line this turn.",
       "keywords": [],
       "crests": [
         {
@@ -2984,12 +2985,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -2999,8 +3000,8 @@
       "name": "Graceful Dice",
       "category": "item",
       "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nRoll a D6. Increase the ATK of one of your monsters by rolled number x 10.",
+      "itemType": "Trap",
+      "effect": "Roll a D6. Increase the ATK of the trapped monster by the rolled result x 10.",
       "keywords": [],
       "crests": [
         {
@@ -3010,7 +3011,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -3025,8 +3026,8 @@
       "name": "Skull Dice",
       "category": "item",
       "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nRoll a D6. Decrease the DEF of an opponent's monster by rolled number x 10.",
+      "itemType": "Trap",
+      "effect": "Roll a D6. Decrease the ATK of the trapped monster by the rolled result x 10.",
       "keywords": [],
       "crests": [
         {
@@ -3067,7 +3068,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -3093,12 +3094,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -3157,7 +3158,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -3169,12 +3170,12 @@
       "level": 2,
       "itemType": "Trap",
       "itemSubtype": "DM Trap",
-      "effect": "DM Trap\nThe attacking monster attacks an opponent's monster or the opponent DM, whoever is closest in a straight line, instead.",
+      "effect": "Negate the attack, and deal damage to the opponent monster nearest in line equal to the attacking monster's ATK. If the opponent DM is nearest, deal 1 damage to them.",
       "keywords": [],
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -3198,7 +3199,7 @@
       "hp": 20,
       "atk": 20,
       "def": 30,
-      "effect": "Spell ×5 Once per turn (Quick): If you didn't dimension a card during your roll: Repeat your roll.",
+      "effect": "Spell x5 Once per turn (Quick): If you didn't dimension a card during your roll: Repeat your roll.",
       "keywords": [
         {
           "name": "Quick"
@@ -3217,7 +3218,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -3335,7 +3336,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -3449,7 +3450,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -3459,7 +3460,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -3487,12 +3488,12 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -3584,7 +3585,7 @@
       "hp": 40,
       "atk": 40,
       "def": 30,
-      "effect": "If this monster destroys a monster by battle, heal all of your monsters by the amount of the destroyed monster's ATK, also heal your DM by 1.",
+      "effect": "Spell x5 If this monster destroys a monster by battle: Heal all of your monsters by the amount of the destroyed monster's ATK, also heal 1 life of your DM.",
       "keywords": [],
       "crests": [
         {
@@ -3599,12 +3600,12 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -3633,7 +3634,7 @@
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -3659,7 +3660,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 7
         },
         {
@@ -3696,7 +3697,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -3789,7 +3790,7 @@
       "hp": 10,
       "atk": 30,
       "def": 20,
-      "effect": "Trap x3 If one of your opponent's Level 1 Monsters is within 1 square of this monster: Destroy it.\nMagic x3 If this monster moves, you can warp one of your Level 2 or lower Beasts up to the same amount of spaces.",
+      "effect": "Trap x3 If one of your opponent's Level 1 Monsters is within 1 square of this monster: Destroy it.\nspell x3 If this monster moves, you can warp one of your Level 2 or lower Beasts up to the same amount of spaces.",
       "keywords": [],
       "crests": [
         {
@@ -3809,7 +3810,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -3893,7 +3894,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -3992,7 +3993,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -4058,7 +4059,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -4086,7 +4087,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -4161,7 +4162,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -4170,11 +4171,21 @@
       "id": 131,
       "name": "Elemental Burst",
       "category": "item",
-      "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nCan only be activated when you control 5 monsters with different types. Destroy all opponent's cards.",
+      "level": 4,
+      "itemType": "Trap",
+      "effect": "Req: You control 5 monsters with different types.\nDestroy all opponent's cards.",
       "keywords": [],
       "crests": [
+        {
+          "roll": 2,
+          "crest": "movement",
+          "amount": 4
+        },
+        {
+          "roll": 3,
+          "crest": "defense",
+          "amount": 2
+        },
         {
           "roll": 4,
           "crest": "trap",
@@ -4187,7 +4198,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -4361,7 +4372,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -4380,7 +4391,7 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -4414,7 +4425,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         }
       ]
@@ -4453,8 +4464,8 @@
       "name": "Backup Soldier",
       "category": "item",
       "level": 2,
-      "itemType": "Spell",
-      "effect": "Spell\nChoose 3 vanilla monsters in your GY, and put them back into your deck. Those monsters gain starsurge 2 and beacon.",
+      "itemType": "Trap",
+      "effect": "Choose up to 3 vanilla monsters in your GY, and put them back into your deck. Those monsters gain starsurge 2 and beacon.",
       "keywords": [
         {
           "name": "Starsurge",
@@ -4472,7 +4483,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -4496,7 +4507,7 @@
       "crests": [
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 7
         },
         {
@@ -4530,12 +4541,12 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -4549,12 +4560,12 @@
       "hp": 30,
       "atk": 20,
       "def": 20,
-      "effect": "Magic x3 If this monster is attacked, swap places with another of your monsters, until end of battle, that fights instead.",
+      "effect": "spell x3 If this monster is attacked, swap places with another of your monsters, until end of battle, that fights instead.",
       "keywords": [],
       "crests": [
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         },
         {
@@ -4593,7 +4604,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -4644,7 +4655,7 @@
       "hp": 10,
       "atk": 0,
       "def": 10,
-      "effect": "Spell ×5 Once per turn: Choose a monster in your GY: Seal it, and copy its ATK and effect, until end of opponent's turn.",
+      "effect": "Spell x5 Once per turn: Choose a monster in your GY: Seal it, and copy its ATK and effect, until end of opponent's turn.",
       "keywords": [
         {
           "name": "Seal"
@@ -4653,12 +4664,12 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         },
         {
@@ -4677,7 +4688,7 @@
       "hp": 20,
       "atk": 40,
       "def": 40,
-      "effect": "Trap ×5 If this monster destroys a monster by battle, resurrect it to the same tile under your control as a Zombie.",
+      "effect": "Trap x5 If this monster destroys a monster by battle, resurrect it to the same tile under your control as a Zombie.",
       "keywords": [],
       "crests": [
         {
@@ -4687,7 +4698,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -4745,7 +4756,7 @@
       "crests": [
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -4842,12 +4853,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -4924,7 +4935,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -4966,7 +4977,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -5034,7 +5045,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -5053,12 +5064,12 @@
       "crests": [
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 8
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -5117,7 +5128,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -5136,7 +5147,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Tunneler\nTrap ×5 Once per turn: Resurrect this Monster adjacent to a Beast Monster.\nA Monster who battles this monster gets infected 1.",
+      "effect": "Tunneler\nTrap x5 Once per turn: Resurrect this Monster adjacent to a Beast Monster.\nA Monster who battles this monster gets infected 1.",
       "keywords": [
         {
           "name": "Tunneler"
@@ -5149,7 +5160,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -5210,7 +5221,7 @@
       "hp": 10,
       "atk": 0,
       "def": 10,
-      "effect": "Tunneler\nMagic x2 Sacrifice this monster: Deal 10 damage to a monster.",
+      "effect": "Tunneler\nspell x2 Sacrifice this monster: Deal 10 damage to a monster.",
       "keywords": [
         {
           "name": "Tunneler"
@@ -5219,12 +5230,12 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ],
@@ -5252,12 +5263,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ],
@@ -5274,7 +5285,7 @@
       "hp": 30,
       "atk": 40,
       "def": 30,
-      "effect": "This monster can make a second attack on monsters in a turn. Magic x7 During a battle, decrease the opponent's monster's DEF by 7x10.",
+      "effect": "This monster can make a second attack on monsters in a turn. spell x7 During a battle, decrease the opponent's monster's DEF by 7x10.",
       "keywords": [],
       "crests": [
         {
@@ -5284,7 +5295,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -5351,7 +5362,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -5482,12 +5493,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         }
       ]
@@ -5660,7 +5671,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -5675,7 +5686,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 7
         }
       ]
@@ -5778,12 +5789,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ]
@@ -5802,7 +5813,7 @@
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -5885,7 +5896,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         }
       ]
@@ -5914,7 +5925,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -5962,7 +5973,7 @@
       "hp": 20,
       "atk": 20,
       "def": 10,
-      "effect": "Spell ×3 Once per turn: Advance every nearest monster aligned horizontally or vertically as far away as possible from this monster.",
+      "effect": "Spell x3 Once per turn: Advance the nearest monster(s) in every direction in line away from this monster.",
       "keywords": [
         {
           "name": "Advance"
@@ -6069,7 +6080,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -6085,10 +6096,10 @@
       "category": "monster",
       "level": 3,
       "monsterType": "Zombie",
-      "hp": 40,
+      "hp": 30,
       "atk": 30,
       "def": 10,
-      "effect": "Trap ×? The range of your traps is extended by ?.\nYou can move your traps with Movement.",
+      "effect": "?x Trap Advance one of your Traps by spending Trap Crests.\nTraps that move into a monster are activated.",
       "keywords": [],
       "crests": [
         {
@@ -6163,7 +6174,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
@@ -6178,8 +6189,8 @@
       "name": "Level Modulation",
       "category": "item",
       "level": 2,
-      "itemType": null,
-      "effect": null,
+      "itemType": "Trap",
+      "effect": "During your next roll, you can choose the result of 1 of your dice without rolling.",
       "keywords": [],
       "crests": [
         {
@@ -6229,7 +6240,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -6269,15 +6280,15 @@
       ]
     },
     {
-      "id": 197,
+      "id": 200,
       "name": "Krebons",
       "category": "monster",
       "level": 2,
       "monsterType": "Zombie",
-      "hp": 10,
-      "atk": 10,
-      "def": 10,
-      "effect": "Trap ×4 Twice per turn: Negate an attack on this monster.",
+      "hp": 20,
+      "atk": 20,
+      "def": 20,
+      "effect": "Trap x2 Twice per turn: Negate an attack on this monster.",
       "keywords": [],
       "crests": [
         {
@@ -6306,7 +6317,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Spell ×5 Roll a D6. Destroy the nearest card in the direction depending on the roll:\n2: Straight | 3: Right | 4: Down | 5: Left (1 and 6 do nothing)",
+      "effect": "Spell x5 Roll a D6. Destroy the nearest card in the direction depending on the roll:\n2: Straight | 3: Right | 4: Down | 5: Left (1 and 6 do nothing)",
       "keywords": [],
       "crests": [
         {
@@ -6325,9 +6336,9 @@
       "id": 199,
       "name": "Adhesion Trap Hole",
       "category": "item",
-      "level": 1,
+      "level": 2,
       "itemType": "Trap",
-      "effect": "The trapped Monster becomes immobilized for 3 turns.",
+      "effect": "The trapped Monster is immobilized as long as it remains on this Trap. Destroy the Trap after the monster leaves the tile.",
       "keywords": [
         {
           "name": "Immobilized"
@@ -6341,7 +6352,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -6352,7 +6363,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 197,
       "name": "Inferno Reckless Summon",
       "category": "item",
       "level": 2,
@@ -6464,7 +6475,7 @@
       "category": "monster",
       "level": 3,
       "monsterType": "Spellcaster",
-      "hp": 50,
+      "hp": 30,
       "atk": 0,
       "def": 30,
       "effect": "Only 1 monster with the same name can be in the dungeon at a time. If 2 or more are in the dungeon, destroy them until only 1 remains.",
@@ -6537,7 +6548,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -6573,7 +6584,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         },
         {
@@ -6615,7 +6626,7 @@
       "crests": [
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -6713,7 +6724,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -6809,7 +6820,7 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -6860,7 +6871,7 @@
       "hp": 30,
       "atk": 10,
       "def": 10,
-      "effect": "Spell ×3 Once per turn: Advance in a straight line. If a card stopped this monster, destroy it.",
+      "effect": "Spell x3 Once per turn: Advance in a straight line. If a card stopped this monster, destroy it.",
       "keywords": [
         {
           "name": "Advance"
@@ -6905,7 +6916,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         },
         {
@@ -7039,7 +7050,7 @@
       "hp": 10,
       "atk": 10,
       "def": 20,
-      "effect": "This monster can move diagonally by paying 2 Movement.",
+      "effect": "This monster can move diagonally.",
       "keywords": [],
       "crests": [
         {
@@ -7068,7 +7079,7 @@
       "crests": [
         {
           "roll": 2,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 5
         },
         {
@@ -7083,12 +7094,12 @@
         },
         {
           "roll": 5,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 2
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 3
         }
       ],
@@ -7144,12 +7155,12 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 6
         },
         {
           "roll": 4,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 1
         },
         {
@@ -7159,7 +7170,7 @@
         },
         {
           "roll": 6,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 4
         }
       ]
@@ -7207,7 +7218,7 @@
       "hp": 20,
       "atk": 40,
       "def": 30,
-      "effect": "Flying\nIf you rolled a summon crest of this monster: You can tribute 1 Dragon; This monster gains Beacon.\nSpell ×? Once per game: Resurrect 1 Dragon (? = Dragon's Level × 3)",
+      "effect": "Flying\nIf you rolled a summon crest of this monster: You can tribute 1 Dragon; This monster gains Beacon.\nSpell x? Once per game: Resurrect 1 Dragon (? = Dragon's Level x 3)",
       "keywords": [
         {
           "name": "Flying"
@@ -7224,7 +7235,7 @@
         },
         {
           "roll": 3,
-          "crest": "magic",
+          "crest": "spell",
           "amount": 7
         },
         {
@@ -7253,7 +7264,7 @@
       "hp": 40,
       "atk": 40,
       "def": 40,
-      "effect": "Indestructible by effects\nAfter this monster battles: You can destroy a card within 5 squares. At the end of your turn, this monster looses 20 DEF.",
+      "effect": "Indestructible by effects\nAfter this monster battled: You can destroy a card within 5 squares.\nAt the end of your turn: This monster loses 20 DEF.",
       "keywords": [
         {
           "name": "Indestructible"
@@ -7336,7 +7347,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Trap ×4 When a monster is targeted for an attack or an effect: Negate it.\nSpell ×4 Select a monster type. All monsters become that monster type until end of turn.",
+      "effect": "Trap x4 When a monster is targeted for an attack or an effect: Negate it.\nSpell x4 Select a monster type. All monsters become that monster type until end of turn.",
       "keywords": [],
       "crests": [
         {
@@ -7413,7 +7424,7 @@
       "hp": 20,
       "atk": 0,
       "def": 0,
-      "effect": "Flying\nSpell ×5 Tribute this monster: Warp 1 opponent monster to this monster's tile, and gain control of it.",
+      "effect": "Flying\nSpell x5 Tribute this monster: Warp 1 opponent monster to this monster's tile, and gain control of it.",
       "keywords": [
         {
           "name": "Flying"
@@ -7451,7 +7462,7 @@
       "hp": 30,
       "atk": 30,
       "def": 20,
-      "effect": "Flying\nSpell ×3 Ignore this monster's Flying movement restriction.\nAttack ×2 If this monster attacks: Set the defending monster's DEF to 0.",
+      "effect": "Flying\nSpell x3 Ignore this monster's Flying movement restriction.\nAttack x2 If this monster attacks: Set the defending monster's DEF to 0.",
       "keywords": [
         {
           "name": "Flying"
@@ -7489,7 +7500,7 @@
       "hp": 20,
       "atk": 40,
       "def": 20,
-      "effect": "Trap ×3 If this monster is destroyed: Gain control of 1 opponent monster.",
+      "effect": "Trap x3 If this monster is destroyed: Gain control of 1 opponent monster.",
       "keywords": [],
       "crests": [
         {
@@ -7528,7 +7539,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Spell ×5 Set your opponent's Trap crest count to 0.",
+      "effect": "Spell x5 Set your opponent's Trap crest count to 0.",
       "keywords": [],
       "crests": [
         {
@@ -7562,7 +7573,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Spell ×5 Set your opponent's Spell crest count to 0.",
+      "effect": "Spell x5 Set your opponent's Spell crest count to 0.",
       "keywords": [],
       "crests": [
         {
@@ -7610,14 +7621,14 @@
     },
     {
       "id": 237,
-      "name": "Arkana's Dark Magician",
+      "name": "Arkana's Dark magician",
       "category": "monster",
       "level": 4,
       "monsterType": "Spellcaster",
       "hp": 20,
       "atk": 30,
       "def": 20,
-      "effect": "This monster can attack by spending any 1 crest.\nTrap ×5 All of your monsters that have already attacked can attack again.",
+      "effect": "This monster can attack by spending any 1 crest.\nTrap x5 All of your monsters that have already attacked can attack again.",
       "keywords": [],
       "crests": [
         {
@@ -7653,14 +7664,14 @@
       "category": "monster",
       "level": 2,
       "monsterType": "Zombie",
-      "hp": 20,
+      "hp": 10,
       "atk": 60,
-      "def": 10,
-      "effect": "Sluggish 3",
+      "def": 0,
+      "effect": "Sluggish 4",
       "keywords": [
         {
           "name": "Sluggish",
-          "value": 3
+          "value": 4
         }
       ],
       "crests": [
@@ -7729,7 +7740,7 @@
       "hp": 10,
       "atk": 20,
       "def": 20,
-      "effect": "Tunneler\nTrap ×3 If this monster tunnels through another monster: You can deal 10 damage to it.",
+      "effect": "Tunneler\nTrap x3 If this monster tunnels through another monster: You can deal 10 damage to it.",
       "keywords": [
         {
           "name": "Tunneler"
@@ -7786,7 +7797,7 @@
       "hp": 20,
       "atk": 0,
       "def": 30,
-      "effect": "Immobilized\nIf you control \"Petit Moth\": This monster gains Beacon, but destroy it after the Dimension, and gain this effect:\nSpell ×2 Once per turn: This monster gains 10 ATK.",
+      "effect": "Immobilized\nIf you control \"Petit Moth\": This monster gains Beacon, but destroy it after the Dimension, and gain this effect:\nSpell x2 Once per turn: This monster gains 10 ATK.",
       "keywords": [
         {
           "name": "Immobilized"
@@ -7992,7 +8003,7 @@
       "hp": 20,
       "atk": 10,
       "def": 0,
-      "effect": "Tunneler\nCan only be attacked by other Tunnelers.\nThis monster can move through empty dungeon spaces, as long as it stops on a dungeon tile.\nSpell ×2 If you tunnel through a monster: Deal 10 damage to it.",
+      "effect": "Tunneler\nCan only be attacked by other Tunnelers.\nThis monster can move through empty dungeon spaces, as long as it stops on a dungeon tile.\nSpell x2 If you tunnel through a monster: Deal 10 damage to it.",
       "keywords": [
         {
           "name": "Tunneler"
@@ -8018,14 +8029,14 @@
     },
     {
       "id": 249,
-      "name": "Mushroom Man #2",
+      "name": "Mushroom Man 2",
       "category": "monster",
       "level": 2,
       "monsterType": "Beast",
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Your other monsters lose 10 ATK.\nSpell ×5 During the End of your turn: Give control of this monster to your opponent.",
+      "effect": "Your other monsters lose 10 ATK.\nSpell x5 During the End of your turn: Give control of this monster to your opponent.",
       "keywords": [],
       "crests": [
         {
@@ -8140,7 +8151,7 @@
       "hp": 30,
       "atk": 30,
       "def": 30,
-      "effect": "Toon, Flying\nSpell ×6 Dimension, while \"Toon World\" is in the Dungeon: Resurrect a Level 3 or lower Toon monster.",
+      "effect": "Toon, Flying\nSpell x6 Dimension, while \"Toon World\" is in the Dungeon: Resurrect a Level 3 or lower Toon monster.",
       "keywords": [
         {
           "name": "Toon"
@@ -8189,7 +8200,7 @@
       "hp": 20,
       "atk": 20,
       "def": 10,
-      "effect": "Toon\nSpell ×4 Once per turn, while \"Toon World\" is in the Dungeon: Tribute a monster; destroy a monster in line that is nearest in any chosen direction.",
+      "effect": "Toon\nSpell x4 Once per turn, while \"Toon World\" is in the Dungeon: Tribute a monster; destroy a monster in line that is nearest in any chosen direction.",
       "keywords": [
         {
           "name": "Toon"
@@ -8463,7 +8474,7 @@
       "hp": 30,
       "atk": 20,
       "def": 30,
-      "effect": "Toon, Tunneler\nSpell ×5 Dimension: During your next roll, one Item that mentions \"Toon\" gains Constellation with Toon monsters.",
+      "effect": "Toon, Tunneler\nSpell x5 Dimension: During your next roll, one Item that mentions \"Toon\" gains Constellation with Toon monsters.",
       "keywords": [
         {
           "name": "Toon"
@@ -8567,7 +8578,7 @@
       "hp": 10,
       "atk": 20,
       "def": 20,
-      "effect": "Trap ×7 If this monster is destroyed by battle: Look through your opponent's dice pool, and add 1 card to your dice pool.",
+      "effect": "Trap x7 If this monster is destroyed by battle: Look through your opponent's dice pool, and add 1 card to your dice pool.",
       "keywords": [],
       "crests": [
         {
@@ -8654,7 +8665,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Trap ×5 If this monster is attacked: You can warp another \"Amazoness\" monster to an adjacent space of the attacking monster, and it becomes the new attacking target.\nYour \"Amazoness\" monsters within 2 squares gain 20 ATK/DEF.",
+      "effect": "Trap x5 If this monster is attacked: You can warp another \"Amazoness\" monster to an adjacent space of the attacking monster, and it becomes the new attacking target.\nYour \"Amazoness\" monsters within 2 squares gain 20 ATK/DEF.",
       "keywords": [],
       "crests": [
         {
@@ -8678,7 +8689,7 @@
       "hp": 20,
       "atk": 40,
       "def": 20,
-      "effect": "Trap ×4 After this monster was attacked: Immediately attack the attacking monster.",
+      "effect": "Trap x4 After this monster was attacked: Immediately attack the attacking monster.",
       "keywords": [],
       "crests": [
         {
@@ -8752,7 +8763,7 @@
       "hp": 30,
       "atk": 10,
       "def": 30,
-      "effect": "Spell ×4 After you couldn't successfully Dimension a card during your normal roll: This monster takes 20 damage, and roll again.",
+      "effect": "Spell x4 After you couldn't successfully Dimension a card during your normal roll: This monster takes 20 damage, and roll again.",
       "keywords": [],
       "crests": [
         {
@@ -8786,7 +8797,7 @@
       "hp": 10,
       "atk": 10,
       "def": 10,
-      "effect": "Trap ×4 If this monster is destroyed: Resurrect it.",
+      "effect": "Trap x4 If this monster is destroyed: Resurrect it.",
       "keywords": [
         {
           "name": "Resurrect"
@@ -8817,7 +8828,7 @@
       "level": 2,
       "itemType": "Spell",
       "itemSubtype": "Continuous",
-      "effect": "Trap ×2 If one of your monsters is attacked: Warp a \"Revival Jam\" to an adjacent tile of the attacking monster, and it becomes the new attacking target.",
+      "effect": "Trap x2 If one of your monsters is attacked: Warp a \"Revival Jam\" to an adjacent tile of the attacking monster, and it becomes the new attacking target.",
       "keywords": [],
       "crests": [
         {
@@ -9028,7 +9039,7 @@
       "hp": 20,
       "atk": 10,
       "def": 30,
-      "effect": "Immovable\nSpell ×2 Once per turn, use one of these effects:\n• Warp this monster to an empty dungeon tile within 4 squares. It becomes an Obstacle, and is no longer a monster.\n• Warp this Obstacle to a tile within 4 squares. It reverts to being a monster.",
+      "effect": "Immovable\nSpell x2 Once per turn, use one of these effects:\n• Warp this monster to an empty dungeon tile within 4 squares. It becomes an Obstacle, and is no longer a monster.\n• Warp this Obstacle to a tile within 4 squares. It reverts to being a monster.",
       "keywords": [
         {
           "name": "Immovable"
@@ -9128,7 +9139,7 @@
       "hp": 40,
       "atk": 50,
       "def": 40,
-      "effect": "Syzygy, Flying\nSpell ×9 If this monster destroys an opponent monster by battle: Your opponent's DM loses 1 life.",
+      "effect": "Syzygy, Flying\nSpell x9 If this monster destroys an opponent monster by battle: Your opponent's DM loses 1 life.",
       "keywords": [
         {
           "name": "Syzygy"
@@ -9287,7 +9298,7 @@
       "hp": 30,
       "atk": 30,
       "def": 20,
-      "effect": "Spell ×3 Warp this monster to the tile of an activated Continuous Item.",
+      "effect": "Spell x3 Warp this monster to the tile of an activated Continuous Item.",
       "keywords": [],
       "crests": [
         {
@@ -9403,7 +9414,7 @@
       "hp": 30,
       "atk": 30,
       "def": 20,
-      "effect": "Trap ×? Set 1 Trap from your GY on a free tile within 3 squares of this monster. (? = Trap's Level × 3)",
+      "effect": "Trap x? Set 1 Trap from your GY on a free tile within 3 squares of this monster. (? = Trap's Level x 3)",
       "keywords": [],
       "crests": [
         {
@@ -9511,7 +9522,7 @@
       "hp": 20,
       "atk": 10,
       "def": 30,
-      "effect": "Spell ×2 Once per turn: Destroy an Obstacle.",
+      "effect": "Spell x2 Once per turn: Destroy an Obstacle.",
       "keywords": [],
       "crests": [
         {
@@ -9540,7 +9551,7 @@
       "hp": 20,
       "atk": 20,
       "def": 20,
-      "effect": "Trap ×3 At the End of each of your turns, if this monster is in the GY because it was destroyed by battle: Destroy 2 crests from your opponent's crest pool.",
+      "effect": "Trap x3 At the End of each of your turns, if this monster is in the GY because it was destroyed by battle: Destroy 2 crests from your opponent's crest pool.",
       "keywords": [],
       "crests": [
         {
@@ -9639,7 +9650,7 @@
       "hp": 20,
       "atk": 30,
       "def": 30,
-      "effect": "Trap ×3 Monsters within 5 squares lose Flying, Tunneling, Swift, and Sluggish, until End of Turn.",
+      "effect": "Trap x3 Monsters within 5 squares lose Flying, Tunneling, Swift, and Sluggish, until End of Turn.",
       "keywords": [
         {
           "name": "Flying"

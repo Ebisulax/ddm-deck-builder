@@ -4,28 +4,19 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dungeon Dice Monsters Deck Builder</title>
 
-    <link
-        rel="stylesheet"
-        href="styles.css"
-    >
+    <link rel="stylesheet" href="styles.css">
 
-    <script
-        src="app.js"
-        defer
-    ></script>
+    <script src="app.js" defer></script>
 </head>
 
 
 <body>
 
-     <!-- =====================================================
+    <!-- =====================================================
          MAIN
          ===================================================== -->
 
@@ -48,26 +39,17 @@
                     </div>
                 </div>
 
-                <div
-                    id="deckCount"
-                    class="deck-count"
-                >
+                <div id="deckCount" class="deck-count">
                     0 / 15
                 </div>
 
             </div>
 
 
-            <div
-                id="deckGrid"
-                class="deck-grid"
-            ></div>
+            <div id="deckGrid" class="deck-grid"></div>
 
 
-            <div
-                id="deckStats"
-                class="deck-stats"
-            ></div>
+            <div id="deckStats" class="deck-stats"></div>
 
         </section>
 
@@ -90,10 +72,7 @@
                         Card Browser
                     </h2>
 
-                    <div
-                        id="resultCount"
-                        class="description"
-                    >
+                    <div id="resultCount" class="description">
                         Loading cards...
                     </div>
 
@@ -114,12 +93,7 @@
 
                 <div class="search-main-row">
 
-                    <input
-                        id="searchInput"
-                        class="main-search"
-                        type="search"
-                        placeholder="Search cards..."
-                    >
+                    <input id="searchInput" class="main-search" type="search" placeholder="Search cards...">
 
 
                     <!-- CATEGORY -->
@@ -127,31 +101,19 @@
                     <div class="compact-toggle-group">
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="category"
-                                value="Monster"
-                            >
+                            <input type="checkbox" name="category" value="Monster">
                             <span>M</span>
                         </label>
 
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="category"
-                                value="Spell"
-                            >
+                            <input type="checkbox" name="category" value="Spell">
                             <span>S</span>
                         </label>
 
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="category"
-                                value="Trap"
-                            >
+                            <input type="checkbox" name="category" value="Trap">
                             <span>T</span>
                         </label>
 
@@ -164,41 +126,25 @@
                     <div class="compact-toggle-group">
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="level"
-                                value="1"
-                            >
+                            <input type="checkbox" name="level" value="1">
                             <span>L1</span>
                         </label>
 
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="level"
-                                value="2"
-                            >
+                            <input type="checkbox" name="level" value="2">
                             <span>L2</span>
                         </label>
 
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="level"
-                                value="3"
-                            >
+                            <input type="checkbox" name="level" value="3">
                             <span>L3</span>
                         </label>
 
 
                         <label>
-                            <input
-                                type="checkbox"
-                                name="level"
-                                value="4"
-                            >
+                            <input type="checkbox" name="level" value="4">
                             <span>L4</span>
                         </label>
 
@@ -208,11 +154,7 @@
 
                     <!-- SORT -->
 
-                    <select
-                        id="sortFilter"
-                        class="compact-sort"
-                        title="Sort cards"
-                    >
+                    <select id="sortFilter" class="compact-sort" title="Sort cards">
 
                         <option value="name-asc">
                             A–Z
@@ -242,17 +184,21 @@
                             DEF ↓
                         </option>
 
+                        <option value="id-desc">
+                            Newest
+                        </option>
+
+                        <option value="id-asc">
+                            Oldest
+                        </option>
+
                     </select>
 
 
 
                     <!-- MORE -->
 
-                    <button
-                        id="moreFiltersButton"
-                        class="compact-button"
-                        type="button"
-                    >
+                    <button id="moreFiltersButton" class="compact-button" type="button">
                         More ▾
                     </button>
 
@@ -260,12 +206,8 @@
 
                     <!-- RESET -->
 
-                    <button
-                        id="resetFiltersButton"
-                        class="compact-button icon-button"
-                        type="button"
-                        title="Reset filters"
-                    >
+                    <button id="resetFiltersButton" class="compact-button icon-button" type="button"
+                        title="Reset filters">
                         ↺
                     </button>
 
@@ -277,10 +219,7 @@
                      ADVANCED FILTERS
                      ================================================= -->
 
-                <div
-                    id="advancedFilters"
-                    class="advanced-filters"
-                >
+                <div id="advancedFilters" class="advanced-filters">
 
 
                     <!-- FIRST ROW -->
@@ -293,11 +232,7 @@
                                 Effect contains
                             </label>
 
-                            <input
-                                id="effectSearch"
-                                type="search"
-                                placeholder="destroy, attack, resurrect..."
-                            >
+                            <input id="effectSearch" type="search" placeholder="destroy, attack, resurrect...">
 
                         </div>
 
@@ -372,13 +307,7 @@
                                 <option value=">">&gt;</option>
                             </select>
 
-                            <input
-                                id="hpValue"
-                                type="number"
-                                min="0"
-                                step="10"
-                                placeholder="0"
-                            >
+                            <input id="hpValue" type="number" min="0" step="10" placeholder="0">
 
                         </div>
 
@@ -401,13 +330,7 @@
                                 <option value=">">&gt;</option>
                             </select>
 
-                            <input
-                                id="atkValue"
-                                type="number"
-                                min="0"
-                                step="10"
-                                placeholder="0"
-                            >
+                            <input id="atkValue" type="number" min="0" step="10" placeholder="0">
 
                         </div>
 
@@ -430,13 +353,7 @@
                                 <option value=">">&gt;</option>
                             </select>
 
-                            <input
-                                id="defValue"
-                                type="number"
-                                min="0"
-                                step="10"
-                                placeholder="0"
-                            >
+                            <input id="defValue" type="number" min="0" step="10" placeholder="0">
 
                         </div>
 
@@ -456,32 +373,20 @@
 
 
                             <label>
-                                <input
-                                    type="radio"
-                                    name="crestMatch"
-                                    value="any"
-                                >
+                                <input type="radio" name="crestMatch" value="any">
                                 Any
                             </label>
 
 
                             <label>
-                                <input
-                                    type="radio"
-                                    name="crestMatch"
-                                    value="all"
-                                    checked
-                                >
+                                <input type="radio" name="crestMatch" value="all" checked>
                                 All
                             </label>
 
                         </div>
 
 
-                        <div
-                            id="crestFilters"
-                            class="crest-filter-grid"
-                        ></div>
+                        <div id="crestFilters" class="crest-filter-grid"></div>
 
                     </div>
 
@@ -495,10 +400,7 @@
                  CARD LIST
                  ================================================= -->
 
-            <div
-                id="cardPool"
-                class="card-pool"
-            ></div>
+            <div id="cardPool" class="card-pool"></div>
 
         </section>
 
@@ -510,195 +412,128 @@
          PREVIEW MODAL
          ===================================================== -->
 
-   <div
-    id="previewModal"
-    class="modal"
-    aria-hidden="true"
->
+    <div id="previewModal" class="modal" aria-hidden="true">
 
-    <button
-        class="modal-backdrop"
-        data-action="close-preview"
-        aria-label="Close preview"
-    ></button>
+        <button class="modal-backdrop" data-action="close-preview" aria-label="Close preview"></button>
 
 
-    <div class="preview-window">
+        <div class="preview-window">
 
-        <button
-            class="preview-close"
-            data-action="close-preview"
-            type="button"
-        >
-            ×
-        </button>
-
-
-        <div class="preview-carousel">
-
-            <button
-                id="previewPrevButton"
-                class="preview-arrow"
-                data-action="preview-prev"
-                type="button"
-                aria-label="Previous card"
-            >
-                ‹
+            <button class="preview-close" data-action="close-preview" type="button">
+                ×
             </button>
 
 
-            <div class="preview-images">
+            <div class="preview-carousel">
 
-                <div class="preview-image-frame">
+                <button id="previewPrevButton" class="preview-arrow" data-action="preview-prev" type="button"
+                    aria-label="Previous card">
+                    ‹
+                </button>
 
-                    <img
-                        id="previewFrontImage"
-                        alt="Card front"
-                    >
+
+                <div class="preview-images">
+
+                    <div class="preview-image-frame">
+
+                        <img id="previewFrontImage" alt="Card front">
+
+                    </div>
+
+
+                    <div class="preview-image-frame">
+
+                        <img id="previewBackImage" alt="Card back">
+
+                    </div>
 
                 </div>
 
 
-                <div class="preview-image-frame">
-
-                    <img
-                        id="previewBackImage"
-                        alt="Card back"
-                    >
-
-                </div>
+                <button id="previewNextButton" class="preview-arrow" data-action="preview-next" type="button"
+                    aria-label="Next card">
+                    ›
+                </button>
 
             </div>
 
 
-            <button
-                id="previewNextButton"
-                class="preview-arrow"
-                data-action="preview-next"
-                type="button"
-                aria-label="Next card"
-            >
-                ›
-            </button>
+            <div class="preview-add-row">
 
-        </div>
+                <button id="previewAddButton" class="primary-button" data-action="preview-add" type="button">
+                    + Add
+                </button>
 
-
-        <div class="preview-add-row">
-
-            <button
-                id="previewAddButton"
-                class="primary-button"
-                data-action="preview-add"
-                type="button"
-            >
-                + Add
-            </button>
+            </div>
 
         </div>
 
     </div>
-
-</div>
-     <!-- =====================================================
+    <!-- =====================================================
      PREVIEW MODAL
      ===================================================== -->
 
-<!-- =====================================================
+    <!-- =====================================================
      PREVIEW MODAL
      ===================================================== -->
 
-<div
-    id="previewModal"
-    class="modal"
-    aria-hidden="true"
->
+    <div id="previewModal" class="modal" aria-hidden="true">
 
-    <button
-        class="modal-backdrop"
-        data-action="close-preview"
-        type="button"
-        aria-label="Close preview"
-    ></button>
+        <button class="modal-backdrop" data-action="close-preview" type="button" aria-label="Close preview"></button>
 
 
-    <div class="preview-window">
+        <div class="preview-window">
 
-        <button
-            class="preview-close"
-            data-action="close-preview"
-            type="button"
-            aria-label="Close preview"
-        >
-            ×
-        </button>
-
-
-        <div class="preview-carousel">
-
-            <button
-                id="previewPrevButton"
-                class="preview-arrow"
-                data-action="preview-prev"
-                type="button"
-                aria-label="Previous card"
-            >
-                ‹
+            <button class="preview-close" data-action="close-preview" type="button" aria-label="Close preview">
+                ×
             </button>
 
 
-            <div class="preview-images">
+            <div class="preview-carousel">
 
-                <div class="preview-image-frame">
+                <button id="previewPrevButton" class="preview-arrow" data-action="preview-prev" type="button"
+                    aria-label="Previous card">
+                    ‹
+                </button>
 
-                    <img
-                        id="previewFrontImage"
-                        alt="Card front"
-                    >
+
+                <div class="preview-images">
+
+                    <div class="preview-image-frame">
+
+                        <img id="previewFrontImage" alt="Card front">
+
+                    </div>
+
+
+                    <div class="preview-image-frame">
+
+                        <img id="previewBackImage" alt="Card back">
+
+                    </div>
 
                 </div>
 
 
-                <div class="preview-image-frame">
-
-                    <img
-                        id="previewBackImage"
-                        alt="Card back"
-                    >
-
-                </div>
+                <button id="previewNextButton" class="preview-arrow" data-action="preview-next" type="button"
+                    aria-label="Next card">
+                    ›
+                </button>
 
             </div>
 
 
-            <button
-                id="previewNextButton"
-                class="preview-arrow"
-                data-action="preview-next"
-                type="button"
-                aria-label="Next card"
-            >
-                ›
-            </button>
+            <div class="preview-add-row">
 
-        </div>
+                <button id="previewAddButton" class="primary-button" data-action="preview-add" type="button">
+                    + Add
+                </button>
 
-
-        <div class="preview-add-row">
-
-            <button
-                id="previewAddButton"
-                class="primary-button"
-                data-action="preview-add"
-                type="button"
-            >
-                + Add
-            </button>
+            </div>
 
         </div>
 
     </div>
-
-</div>
 </body>
+
 </html>
