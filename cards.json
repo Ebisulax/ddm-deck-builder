@@ -4655,10 +4655,10 @@
       "hp": 10,
       "atk": 0,
       "def": 10,
-      "effect": "Spell x5 Once per turn: Choose a monster in your GY: Seal it, and copy its ATK and effect, until end of opponent's turn.",
+      "effect": "Spell x5 Once per turn: Choose a monster in your GY: It gets sealed, and copy its ATK and effect, until end of opponent's turn.",
       "keywords": [
         {
-          "name": "Seal"
+          "name": "Sealed"
         }
       ],
       "crests": [
