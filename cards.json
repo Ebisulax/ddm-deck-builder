@@ -8063,8 +8063,11 @@
       "level": 2,
       "itemType": "Spell",
       "itemSubtype": "Continuous",
-      "effect": "Monsters that mention \"Toon World\" gain Starsurge 1, and also gain Swift 2 if within 5 squares.",
+      "effect": "Toon Monsters gain Starsurge 1, and also gain Swift 2 if within 5 squares.",
       "keywords": [
+        {
+          "name": "Toon"
+        },
         {
           "name": "Starsurge",
           "value": 1
@@ -9039,10 +9042,10 @@
       "hp": 20,
       "atk": 10,
       "def": 30,
-      "effect": "Immovable\nSpell x2 Once per turn, use one of these effects:\n• Warp this monster to an empty dungeon tile within 4 squares. It becomes an Obstacle, and is no longer a monster.\n• Warp this Obstacle to a tile within 4 squares. It reverts to being a monster.",
+      "effect": "Immobilized\nSpell x2 Once per turn, use one of these effects:\n• Warp this monster to an empty dungeon tile within 4 squares. It becomes an Obstacle, and is no longer a monster.\n• Warp this Obstacle to a tile within 4 squares. It reverts to being a monster.",
       "keywords": [
         {
-          "name": "Immovable"
+          "name": "Immobilized"
         }
       ],
       "crests": [
