@@ -88,13 +88,12 @@
 
             <div class="compact-search-panel">
 
-
                 <!-- MAIN FILTER ROW -->
 
                 <div class="search-main-row">
 
-                    <input id="searchInput" class="main-search" type="search" placeholder="Search cards...">
-
+                    <input id="searchInput" class="main-search" type="search" placeholder="Card Name"
+                        aria-label="Card Name">
 
                     <!-- CATEGORY -->
 
@@ -214,7 +213,6 @@
                 </div>
 
 
-
                 <!-- =================================================
                      ADVANCED FILTERS
                      ================================================= -->
@@ -227,27 +225,44 @@
                     <div class="advanced-filter-row">
 
                         <div class="mini-filter wide">
-
                             <label for="effectSearch">
                                 Effect contains
                             </label>
 
-                            <input id="effectSearch" type="search" placeholder="destroy, attack, resurrect...">
-
+                            <input id="effectSearch" type="search">
                         </div>
 
 
-                        <div class="mini-filter">
+                        <div class="mini-filter keyword-filter">
 
-                            <label for="monsterTypeFilter">
-                                Type
-                            </label>
+                            <div class="keyword-header">
 
-                            <select id="monsterTypeFilter">
-                                <option value="">
+                                <span>
+                                    Keyword
+                                </span>
+
+                                <label>
+                                    <input type="radio" name="keywordMatch" value="any">
                                     Any
-                                </option>
-                            </select>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="keywordMatch" value="all" checked>
+                                    All
+                                </label>
+
+                            </div>
+
+
+                            <details id="keywordDropdown" class="keyword-dropdown">
+
+                                <summary id="keywordSummary">
+                                    Any
+                                </summary>
+
+                                <div id="keywordOptions" class="keyword-options"></div>
+
+                            </details>
 
                         </div>
 
@@ -259,21 +274,6 @@
                             </label>
 
                             <select id="itemSubtypeFilter">
-                                <option value="">
-                                    Any
-                                </option>
-                            </select>
-
-                        </div>
-
-
-                        <div class="mini-filter">
-
-                            <label for="keywordFilter">
-                                Keyword
-                            </label>
-
-                            <select id="keywordFilter">
                                 <option value="">
                                     Any
                                 </option>

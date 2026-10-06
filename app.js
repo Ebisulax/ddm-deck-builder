@@ -982,6 +982,110 @@ function fillSelect(
             .join("");
 }
 
+function populateKeywordFilter(
+    keywords
+) {
+
+    const container =
+        $("#keywordOptions");
+
+
+    if (!container) {
+
+        return;
+    }
+
+
+    container.innerHTML =
+        keywords
+            .map(
+                keyword => `
+
+                    <label class="keyword-option">
+
+                        <input
+                            type="checkbox"
+                            value="${escapeHtml(keyword)}"
+                            data-keyword-checkbox
+                        >
+
+                        <span>
+                            ${escapeHtml(keyword)}
+                        </span>
+
+                    </label>
+
+                `
+            )
+            .join("");
+
+
+    updateKeywordSummary();
+}
+
+
+function getSelectedKeywords() {
+
+    return $$(
+        "[data-keyword-checkbox]:checked"
+    )
+        .map(
+            input =>
+                normalizeText(
+                    input.value
+                )
+        );
+}
+
+
+function updateKeywordSummary() {
+
+    const summary =
+        $("#keywordSummary");
+
+
+    if (!summary) {
+
+        return;
+    }
+
+
+    const selected =
+        $$(
+            "[data-keyword-checkbox]:checked"
+        )
+            .map(
+                input =>
+                    input.value
+            );
+
+
+    if (
+        selected.length === 0
+    ) {
+
+        summary.textContent =
+            "Any";
+
+        return;
+    }
+
+
+    if (
+        selected.length === 1
+    ) {
+
+        summary.textContent =
+            selected[0];
+
+        return;
+    }
+
+
+    summary.textContent =
+        `${selected.length} keywords`;
+}
+
 
 function populateFilterOptions() {
 
@@ -1046,8 +1150,7 @@ function populateFilterOptions() {
     );
 
 
-    fillSelect(
-        $("#keywordFilter"),
+    populateKeywordFilter(
         keywords
     );
 }
@@ -1451,47 +1554,12 @@ function matchesSearch(
     }
 
 
-    const searchable =
-        [
-
-            card.name,
-
-            card.effect,
-
-            card.monsterType,
-
-            card.itemType,
-
-            card.itemSubtype,
-
-            card.keywords
-                .map(
-                    formatKeyword
-                )
-                .join(" "),
-
-            card.crests
-                .map(
-                    crest =>
-                        formatCrestName(
-                            crest.crest
-                        )
-                )
-                .join(" "),
-
-            `level ${card.level}`
-
-        ]
-            .filter(
-                Boolean
-            )
-            .join(" ")
-            .toLowerCase();
-
-
-    return searchable.includes(
-        query
-    );
+    return normalizeText(
+        card.name
+    )
+        .includes(
+            query
+        );
 }
 
 
@@ -1552,11 +1620,16 @@ function applyFilters() {
         );
 
 
-    const keyword =
-        normalizeText(
-            $("#keywordFilter")
-                ?.value
-        );
+    const keywords =
+        getSelectedKeywords();
+
+
+    const keywordMatch =
+        document.querySelector(
+            "input[name='keywordMatch']:checked"
+        )
+            ?.value ??
+        "all";
 
 
     const hp =
@@ -1655,7 +1728,7 @@ function applyFilters() {
                     const cardType =
                         normalizeText(
                             card.category ===
-                            "monster"
+                                "monster"
 
                                 ? card.monsterType
 
@@ -1684,12 +1757,12 @@ function applyFilters() {
 
                     if (
                         card.category !==
-                            "item" ||
+                        "item" ||
 
                         normalizeText(
                             card.itemSubtype
                         ) !==
-                            itemSubtype
+                        itemSubtype
                     ) {
 
                         return false;
@@ -1700,17 +1773,51 @@ function applyFilters() {
                 /* KEYWORD */
 
                 if (
-                    keyword &&
-                    !card.keywords.some(
-                        entry =>
-                            normalizeText(
-                                entry.name
-                            ) ===
-                            keyword
-                    )
+                    keywords.length
                 ) {
 
-                    return false;
+                    const cardKeywords =
+                        card.keywords.map(
+                            entry =>
+                                normalizeText(
+                                    entry.name
+                                )
+                        );
+
+
+                    const matches =
+                        keywords.map(
+                            keyword =>
+                                cardKeywords.includes(
+                                    keyword
+                                )
+                        );
+
+
+                    if (
+                        keywordMatch === "any"
+                    ) {
+
+                        if (
+                            !matches.some(
+                                Boolean
+                            )
+                        ) {
+
+                            return false;
+                        }
+
+                    } else {
+
+                        if (
+                            !matches.every(
+                                Boolean
+                            )
+                        ) {
+
+                            return false;
+                        }
+                    }
                 }
 
 
@@ -1933,7 +2040,7 @@ function sortCards(
 
             break;
 
-            
+
         case "id-desc":
 
             result.sort(
@@ -3107,17 +3214,32 @@ function resetFilters() {
     }
 
 
-    const keyword =
-        $("#keywordFilter");
+    $$(
+        "[data-keyword-checkbox]"
+    )
+        .forEach(
+            checkbox =>
+                checkbox.checked =
+                false
+        );
+
+
+    const keywordAll =
+        document.querySelector(
+            "input[name='keywordMatch'][value='all']"
+        );
 
 
     if (
-        keyword
+        keywordAll
     ) {
 
-        keyword.value =
-            "";
+        keywordAll.checked =
+            true;
     }
+
+
+    updateKeywordSummary();
 
 
     const sort =
@@ -3354,6 +3476,16 @@ document.addEventListener(
 function filterChanged(
     event
 ) {
+
+    if (
+        event.target.matches(
+            "[data-keyword-checkbox]"
+        )
+    ) {
+
+        updateKeywordSummary();
+    }
+
 
     if (
         event.target.closest(
