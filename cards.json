@@ -1,6 +1,5 @@
 {
   "meta": {
-    "cardCount": 236,
     "automaticStarFacesStored": false,
     "automaticStarRules": {
       "1": {
@@ -35,8 +34,7 @@
       }
     },
     "imageFrontTemplate": "Karten/cards/{name}.jpg",
-    "imageBackTemplate": "Karten/cards backs/{name} back.jpg",
-    "ignoredAlternateArt": "Infernity Archer alt.jpg"
+    "imageBackTemplate": "Karten/cards backs/{name} back.jpg"
   },
   "cards": [
     {
@@ -2230,11 +2228,8 @@
       "hp": 10,
       "atk": 20,
       "def": 20,
-      "effect": "x4 (Quick): Negate the effect of an Item. Then, if it's a Trap, set it back face-down (the trapped monster advances 1 tile). If it's a Spell, put it back into your opponent's crest pool, and give it starsurge 1.",
+      "effect": "x4 (Quick): Negate the effect of an Item. Then, if it's a Trap, set it back face-down. If it's a Spell, put it back into your opponent's crest pool, and give it starsurge 1.",
       "keywords": [
-        {
-          "name": "Quick"
-        },
         {
           "name": "Starsurge",
           "value": 1
@@ -3212,11 +3207,7 @@
       "atk": 20,
       "def": 30,
       "effect": "Spell x5 Once per turn (Quick): If you didn't dimension a card during your roll: Repeat your roll.",
-      "keywords": [
-        {
-          "name": "Quick"
-        }
-      ],
+      "keywords": [],
       "crests": [
         {
           "roll": 3,
@@ -6146,7 +6137,11 @@
       "atk": 30,
       "def": 10,
       "effect": "?x Trap Advance one of your Traps by spending Trap Crests.\nTraps that move into a monster are activated.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Advance"
+        }
+      ],
       "crests": [
         {
           "roll": 3,
@@ -6953,7 +6948,11 @@
       "level": 4,
       "itemType": "Spell",
       "effect": "During each End of Turn, block the outmost unblocked lines of the dungeon. Both DMs get pushed forward 1 tile. Each card that occupies a blocked tile advances inward 1 tile. If it can't, it is destroyed.",
-      "keywords": [],
+      "keywords": [
+        {
+          "name": "Advance"
+        }
+      ],
       "crests": [
         {
           "roll": 2,
