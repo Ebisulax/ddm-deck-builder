@@ -359,8 +359,12 @@
       "hp": 20,
       "atk": 30,
       "def": 20,
-      "effect": "Constellation to Spells",
+      "effect": "Starechoes Spells\nConstellation to Spells",
       "keywords": [
+        {
+          "name": "Starechoes",
+          "value": "Spells"
+        },
         {
           "name": "Constellation",
           "value": "Spells"
@@ -512,8 +516,12 @@
       "hp": 10,
       "atk": 0,
       "def": 10,
-      "effect": "This monster has the same Level and the same Summon Crests at the same dice numbers as all other cards while rolling.",
-      "keywords": [],
+      "effect": "Starechoes cards",
+      "keywords": [
+        {
+          "name": "Starechoes"
+        }
+      ],
       "crests": [
         {
           "roll": 5,
