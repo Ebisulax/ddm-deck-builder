@@ -3136,6 +3136,431 @@ function loadDeck() {
 }
 
 
+
+
+/* =========================================================
+   DDM ODDS CALCULATOR
+   ========================================================= */
+
+function getOddsDice() {
+
+    return [
+        1,
+        2,
+        3
+    ]
+        .map(
+            index => ({
+
+                level:
+                    Number(
+                        $(`#oddsLevel${index}`)
+                            ?.value ??
+                        1
+                    ),
+
+                starsurge:
+                    Number(
+                        $(`#oddsStarsurge${index}`)
+                            ?.value ??
+                        0
+                    ),
+
+                dimension:
+                    $(`#oddsDimension${index}`)
+                        ?.checked ??
+                    false
+            })
+        );
+}
+
+
+function getSummonFaceCount(
+    level,
+    starsurge
+) {
+
+    const base =
+        5 -
+        level;
+
+
+    return Math.min(
+        6,
+        Math.max(
+            1,
+            base +
+            starsurge
+        )
+    );
+}
+
+
+function getDimensionProbability(
+    dice
+) {
+
+    const selectedLevels =
+        new Set(
+            dice
+                .filter(
+                    die =>
+                        die.dimension
+                )
+                .map(
+                    die =>
+                        die.level
+                )
+        );
+
+
+    if (
+        !selectedLevels.size
+    ) {
+
+        return null;
+    }
+
+
+    let probability =
+        0;
+
+
+    for (
+        let mask = 0;
+        mask < 8;
+        mask++
+    ) {
+
+        let outcomeProbability =
+            1;
+
+
+        const summonResults =
+            dice.map(
+                (die, index) => {
+
+                    const faces =
+                        getSummonFaceCount(
+                            die.level,
+                            die.starsurge
+                        );
+
+
+                    const p =
+                        faces /
+                        6;
+
+
+                    const success =
+                        Boolean(
+                            mask &
+                            (
+                                1 <<
+                                index
+                            )
+                        );
+
+
+                    outcomeProbability *=
+                        success
+                            ? p
+                            : (
+                                1 -
+                                p
+                            );
+
+
+                    return success;
+                }
+            );
+
+
+        let canDimension =
+            false;
+
+
+        selectedLevels.forEach(
+            level => {
+
+                if (
+                    canDimension
+                ) {
+
+                    return;
+                }
+
+
+                const matchingSummonCrests =
+                    dice.reduce(
+                        (
+                            total,
+                            die,
+                            index
+                        ) =>
+
+                            total +
+                            (
+                                die.level ===
+                                    level &&
+                                summonResults[
+                                    index
+                                ]
+
+                                    ? 1
+                                    : 0
+                            ),
+
+                        0
+                    );
+
+
+                if (
+                    matchingSummonCrests >=
+                    2
+                ) {
+
+                    canDimension =
+                        true;
+                }
+            }
+        );
+
+
+        if (
+            canDimension
+        ) {
+
+            probability +=
+                outcomeProbability;
+        }
+    }
+
+
+    return probability;
+}
+
+
+function formatOddsPercent(
+    value
+) {
+
+    return (
+        value *
+        100
+    )
+        .toFixed(
+            2
+        )
+        .replace(
+            /\.00$/,
+            ""
+        ) +
+        "%";
+}
+
+
+function updateOddsCalculator() {
+
+    const dice =
+        getOddsDice();
+
+
+    const results =
+        $("#oddsDieResults");
+
+
+    if (
+        results
+    ) {
+
+        results.innerHTML =
+            dice
+                .map(
+                    (
+                        die,
+                        index
+                    ) => {
+
+                        const faces =
+                            getSummonFaceCount(
+                                die.level,
+                                die.starsurge
+                            );
+
+
+                        return `
+                            <div>
+                                <span>
+                                    Die ${index + 1}
+                                </span>
+
+                                <strong>
+                                    ${faces}/6
+                                    ·
+                                    ${formatOddsPercent(
+                                        faces / 6
+                                    )}
+                                </strong>
+                            </div>
+                        `;
+                    }
+                )
+                .join("");
+    }
+
+
+    const warning =
+        $("#oddsWarning");
+
+
+    const uniqueLevels =
+        new Set(
+            dice.map(
+                die =>
+                    die.level
+            )
+        );
+
+
+    if (
+        warning
+    ) {
+
+        if (
+            uniqueLevels.size ===
+            3
+        ) {
+
+            warning.hidden =
+                false;
+
+            warning.textContent =
+                "There must be at least 2 dice of the same Level for a Dimension attempt.";
+
+        } else {
+
+            const selected =
+                dice.filter(
+                    die =>
+                        die.dimension
+                );
+
+
+            const hasValidSelectedLevel =
+                selected.some(
+                    target =>
+                        dice.filter(
+                            die =>
+                                die.level ===
+                                target.level
+                        )
+                            .length >=
+                        2
+                );
+
+
+            if (
+                selected.length &&
+                !hasValidSelectedLevel
+            ) {
+
+                warning.hidden =
+                    false;
+
+                warning.textContent =
+                    "A selected Dimension target needs at least 2 dice of its Level.";
+
+            } else {
+
+                warning.hidden =
+                    true;
+
+                warning.textContent =
+                    "";
+            }
+        }
+    }
+
+
+    const dimensionChance =
+        $("#oddsDimensionChance");
+
+
+    if (
+        dimensionChance
+    ) {
+
+        const probability =
+            getDimensionProbability(
+                dice
+            );
+
+
+        dimensionChance.textContent =
+            probability ===
+                null
+
+                ? "Select Dimension"
+
+                : formatOddsPercent(
+                    probability
+                );
+    }
+}
+
+
+function openOddsCalculator() {
+
+    const modal =
+        $("#oddsModal");
+
+
+    if (!modal) {
+
+        return;
+    }
+
+
+    modal.classList.add(
+        "open"
+    );
+
+
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+
+    updateOddsCalculator();
+}
+
+
+function closeOddsCalculator() {
+
+    const modal =
+        $("#oddsModal");
+
+
+    if (!modal) {
+
+        return;
+    }
+
+
+    modal.classList.remove(
+        "open"
+    );
+
+
+    modal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+}
+
+
 /* =========================================================
    RESET FILTERS
    ========================================================= */
@@ -3528,6 +3953,47 @@ $("#moreFiltersButton")
     );
 
 
+$("#oddsButton")
+    ?.addEventListener(
+        "click",
+        openOddsCalculator
+    );
+
+
+$("#oddsCloseButton")
+    ?.addEventListener(
+        "click",
+        closeOddsCalculator
+    );
+
+
+$("#oddsBackdrop")
+    ?.addEventListener(
+        "click",
+        closeOddsCalculator
+    );
+
+
+$(
+    "[data-odds-input]"
+)
+    .forEach(
+        input => {
+
+            input.addEventListener(
+                "input",
+                updateOddsCalculator
+            );
+
+
+            input.addEventListener(
+                "change",
+                updateOddsCalculator
+            );
+        }
+    );
+
+
 /* =========================================================
    KEYBOARD PREVIEW CONTROLS
    ========================================================= */
@@ -3549,12 +4015,27 @@ document.addEventListener(
             false;
 
 
+        const oddsOpen =
+            $("#oddsModal")
+                ?.classList
+                .contains(
+                    "open"
+                ) ??
+            false;
+
+
         if (
             event.key ===
             "Escape"
         ) {
 
             if (
+                oddsOpen
+            ) {
+
+                closeOddsCalculator();
+
+            } else if (
                 previewOpen
             ) {
 
@@ -3634,12 +4115,20 @@ window.DDMDeckBuilder = {
 
     closePreview,
 
-    movePreview
+    movePreview,
+
+    openOddsCalculator,
+
+    closeOddsCalculator,
+
+    updateOddsCalculator
 };
 
 
 /* =========================================================
    START
    ========================================================= */
+
+updateOddsCalculator();
 
 loadCards();
