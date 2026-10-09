@@ -3358,18 +3358,48 @@ function formatOddsPercent(
     value
 ) {
 
-    return (
-        value *
-        100
-    )
-        .toFixed(
-            2
+    const percent =
+        (
+            value *
+            100
         )
-        .replace(
-            /\.00$/,
-            ""
-        ) +
-        "%";
+            .toFixed(
+                2
+            )
+            .replace(
+                /\.00$/,
+                ""
+            );
+
+
+    if (
+        value <=
+        0
+    ) {
+
+        return `${percent}% (1/∞)`;
+    }
+
+
+    const denominator =
+        (
+            1 /
+            value
+        )
+            .toFixed(
+                2
+            )
+            .replace(
+                /\.00$/,
+                ""
+            )
+            .replace(
+                /(\.\d)0$/,
+                "$1"
+            );
+
+
+    return `${percent}% (1/${denominator})`;
 }
 
 
@@ -3514,12 +3544,41 @@ function updateOddsCalculator() {
     }
 
 
+    const hasWarning =
+        warning
+            ? !warning.hidden
+            : false;
+
+
+    if (
+        results
+    ) {
+
+        results.hidden =
+            hasWarning;
+    }
+
+
+    const oddsTotal =
+        $(".odds-total");
+
+
+    if (
+        oddsTotal
+    ) {
+
+        oddsTotal.hidden =
+            hasWarning;
+    }
+
+
     const dimensionChance =
         $("#oddsDimensionChance");
 
 
     if (
-        dimensionChance
+        dimensionChance &&
+        !hasWarning
     ) {
 
         const probability =
