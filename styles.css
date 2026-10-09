@@ -1746,3 +1746,258 @@ button:disabled {
 
     font-size: 1.1rem;
 }
+
+/* =========================================================
+   DDM ODDS CALCULATOR
+   ========================================================= */
+
+.odds-modal-backdrop {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    border: 0;
+
+    background:
+        rgba(0, 0, 0, .45);
+
+    pointer-events: auto;
+
+    cursor: pointer;
+}
+
+
+.odds-window {
+    position: relative;
+
+    z-index: 1;
+
+    width:
+        min(
+            520px,
+            calc(100vw - 20px)
+        );
+
+    max-height:
+        calc(100vh - 20px);
+
+    overflow: auto;
+
+    padding: 18px;
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius: 8px;
+
+    background: var(--panel);
+
+    box-shadow:
+        0 10px 40px
+        rgba(0, 0, 0, .55);
+
+    pointer-events: auto;
+}
+
+
+.odds-window h2 {
+    margin:
+        0
+        36px
+        14px
+        0;
+}
+
+
+.odds-grid {
+    display: grid;
+
+    grid-template-columns:
+        58px
+        minmax(70px, 1fr)
+        minmax(90px, 1fr)
+        90px;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.odds-grid-header {
+    margin-bottom: 5px;
+
+    color: var(--muted);
+
+    font-size: .78rem;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+.odds-grid strong {
+    font-size: .85rem;
+}
+
+
+.odds-grid select {
+    width: 100%;
+    height: 38px;
+
+    padding: 3px 7px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 4px;
+
+    color: var(--text);
+
+    background: #0d151b;
+
+    font-size: .9rem;
+}
+
+
+.odds-dimension-check {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 38px;
+}
+
+
+.odds-dimension-check input {
+    width: 20px;
+    height: 20px;
+
+    margin: 0;
+
+    cursor: pointer;
+}
+
+
+.odds-warning {
+    margin-top: 12px;
+
+    padding: 9px 10px;
+
+    border:
+        1px solid #755d2b;
+
+    border-radius: 4px;
+
+    background: #2a2416;
+
+    font-size: .82rem;
+}
+
+
+.odds-die-results {
+    display: grid;
+
+    gap: 5px;
+
+    margin-top: 14px;
+}
+
+
+.odds-die-results > div {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding:
+        6px
+        8px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 4px;
+
+    background: #10181e;
+
+    font-size: .82rem;
+}
+
+
+.odds-total {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+    padding:
+        10px
+        12px;
+
+    border:
+        1px solid var(--gold);
+
+    border-radius: 5px;
+
+    background: #171b1d;
+}
+
+
+.odds-total strong {
+    color: var(--gold-light);
+
+    font-size: 1.15rem;
+}
+
+
+@media
+(max-width: 480px) {
+
+    .odds-window {
+        padding: 14px;
+    }
+
+
+    .odds-grid {
+        grid-template-columns:
+            46px
+            minmax(58px, 1fr)
+            minmax(72px, 1fr)
+            76px;
+
+        gap: 5px;
+    }
+
+
+    .odds-grid-header {
+        font-size: .68rem;
+    }
+
+
+    .odds-grid select {
+        height: 36px;
+
+        padding:
+            2px
+            4px;
+
+        font-size: .82rem;
+    }
+}
