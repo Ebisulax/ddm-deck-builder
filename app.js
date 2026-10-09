@@ -3974,7 +3974,7 @@ $("#oddsBackdrop")
     );
 
 
-$(
+$$(
     "[data-odds-input]"
 )
     .forEach(
