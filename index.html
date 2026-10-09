@@ -203,6 +203,14 @@
 
 
 
+                    <!-- ODDS -->
+
+                    <button id="oddsButton" class="compact-button" type="button">
+                        Odds
+                    </button>
+
+
+
                     <!-- RESET -->
 
                     <button id="resetFiltersButton" class="compact-button icon-button" type="button"
@@ -534,6 +542,133 @@
         </div>
 
     </div>
+
+    <!-- =====================================================
+         DDM ODDS CALCULATOR
+         ===================================================== -->
+
+    <div id="oddsModal" class="modal" aria-hidden="true">
+
+        <button id="oddsBackdrop" class="odds-modal-backdrop" type="button" aria-label="Close odds calculator"></button>
+
+
+        <div class="odds-window">
+
+            <button id="oddsCloseButton" class="preview-close" type="button" aria-label="Close odds calculator">
+                ×
+            </button>
+
+
+            <h2>
+                DDM Odds Calculator
+            </h2>
+
+
+            <div class="odds-grid odds-grid-header">
+
+                <span></span>
+                <span>Level</span>
+                <span>Starsurge</span>
+                <span>Dimension</span>
+
+            </div>
+
+
+            <div class="odds-grid">
+
+                <strong>Die 1</strong>
+
+                <select id="oddsLevel1" data-odds-input>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <select id="oddsStarsurge1" data-odds-input>
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label class="odds-dimension-check">
+                    <input id="oddsDimension1" type="checkbox" data-odds-input>
+                </label>
+
+
+                <strong>Die 2</strong>
+
+                <select id="oddsLevel2" data-odds-input>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <select id="oddsStarsurge2" data-odds-input>
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label class="odds-dimension-check">
+                    <input id="oddsDimension2" type="checkbox" data-odds-input>
+                </label>
+
+
+                <strong>Die 3</strong>
+
+                <select id="oddsLevel3" data-odds-input>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <select id="oddsStarsurge3" data-odds-input>
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label class="odds-dimension-check">
+                    <input id="oddsDimension3" type="checkbox" data-odds-input>
+                </label>
+
+            </div>
+
+
+            <div id="oddsWarning" class="odds-warning" hidden></div>
+
+
+            <div id="oddsDieResults" class="odds-die-results"></div>
+
+
+            <div class="odds-total">
+
+                <span>
+                    Dimension chance
+                </span>
+
+                <strong id="oddsDimensionChance">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 
 </html>
