@@ -3197,7 +3197,8 @@ function getSummonFaceCount(
 
 
 function getDimensionProbability(
-    dice
+    dice,
+    syzygy = false
 ) {
 
     const selectedLevels =
@@ -3328,6 +3329,18 @@ function getDimensionProbability(
 
 
         if (
+            syzygy &&
+            !summonResults.every(
+                Boolean
+            )
+        ) {
+
+            canDimension =
+                false;
+        }
+
+
+        if (
             canDimension
         ) {
 
@@ -3364,6 +3377,12 @@ function updateOddsCalculator() {
 
     const dice =
         getOddsDice();
+
+
+    const syzygy =
+        $("#oddsSyzygy")
+            ?.checked ??
+        false;
 
 
     const results =
@@ -3471,6 +3490,16 @@ function updateOddsCalculator() {
                 warning.textContent =
                     "A selected Dimension target needs at least 2 dice of its Level.";
 
+            } else if (
+                syzygy
+            ) {
+
+                warning.hidden =
+                    false;
+
+                warning.textContent =
+                    "Syzygy: all 3 dice must roll Dimension Crests.";
+
             } else {
 
                 warning.hidden =
@@ -3493,7 +3522,8 @@ function updateOddsCalculator() {
 
         const probability =
             getDimensionProbability(
-                dice
+                dice,
+                syzygy
             );
 
 
