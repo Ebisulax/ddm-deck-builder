@@ -3447,6 +3447,18 @@ function updateOddsCalculator() {
     ) {
 
         if (
+            syzygy &&
+            uniqueLevels.size !==
+            1
+        ) {
+
+            warning.hidden =
+                false;
+
+            warning.textContent =
+                "Syzygy requires all 3 dice to have the same Level.";
+
+        } else if (
             uniqueLevels.size ===
             3
         ) {
@@ -3489,16 +3501,6 @@ function updateOddsCalculator() {
 
                 warning.textContent =
                     "A selected Dimension target needs at least 2 dice of its Level.";
-
-            } else if (
-                syzygy
-            ) {
-
-                warning.hidden =
-                    false;
-
-                warning.textContent =
-                    "Syzygy: all 3 dice must roll Dimension Crests.";
 
             } else {
 
