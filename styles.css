@@ -2001,3 +2001,28 @@ button:disabled {
         font-size: .82rem;
     }
 }
+
+
+.odds-syzygy {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 5px;
+
+    font-size: .85rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.odds-syzygy input {
+    width: 19px;
+    height: 19px;
+
+    margin: 0;
+}
